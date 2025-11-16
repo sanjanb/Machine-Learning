@@ -3,12 +3,14 @@
 ## 🎉 What We Fixed
 
 ### ✅ Fixed All Errors:
+
 1. **Renamed folder**: `Foudations` → `Foundations` (fixed typo)
 2. **Created missing files**: All navigation links now work
 3. **Removed Jekyll warnings**: Added proper layout structure
 4. **Added styling**: Custom CSS for better formatting
 
 ### ✅ Project Structure:
+
 ```
 Machine-Learning/
 ├── _layouts/default.html     # Custom layout with navigation
@@ -39,22 +41,26 @@ Machine-Learning/
 ### Quick Start Guide:
 
 #### Add a New Lecture:
+
 1. Copy `_templates/lecture_template.md`
 2. Save as `pages/lectures/lecture3.md` (or next number)
 3. Fill in content
 4. Add to navigation in `_layouts/default.html`
 
 #### Add a New Topic:
-1. Copy `_templates/topic_template.md` 
+
+1. Copy `_templates/topic_template.md`
 2. Save as `topics/new_topic.md`
 3. Fill in content
 4. Add to navigation in `_layouts/default.html`
 
 #### Math Support:
+
 - Inline math: `$\theta_0$`
 - Block math: `$$\theta = \theta - \alpha \nabla J(\theta)$$`
 
 #### Code Support:
+
 ```python
 def gradient_descent():
     # Your code here
