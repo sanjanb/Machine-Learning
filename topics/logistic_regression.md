@@ -18,4 +18,24 @@ This section covers Logistic Regression for classification tasks.
 - Gradient descent
 - Multiclass classification
 
-_Detailed notes to be added._
+### Mathematical Foundation
+
+Sigmoid function:
+$$g(z) = \frac{1}{1 + e^{-z}}$$
+
+Hypothesis function:
+$$h_\theta(x) = g(\theta^T x) = \frac{1}{1 + e^{-\theta^T x}}$$
+
+Cost function:
+$$J(\theta) = \frac{1}{m} \sum_{i=1}^{m} [-y^{(i)} \log(h_\theta(x^{(i)})) - (1-y^{(i)}) \log(1-h_\theta(x^{(i)}))]$$
+
+### Practical Implementation
+
+📊 **See this concept in action:** [Project 2: Classification with Logistic Regression](/projects/project2-logistic-regression.html) *(Coming Soon)*
+
+### Applications
+- Email spam detection
+- Medical diagnosis
+- Marketing response prediction
+
+*Detailed notes to be added based on project learnings.*

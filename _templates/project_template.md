@@ -16,6 +16,7 @@ folder: projects
 **Status:** 📋 Planned / 🚧 In Progress / ✅ Complete
 
 **Skills Learned:**
+
 - [Skill 1]
 - [Skill 2]
 - [Skill 3]
@@ -25,6 +26,7 @@ folder: projects
 ## 🔗 Related Concepts
 
 Before starting this project, review these concept pages:
+
 - 📖 [Concept 1](/topics/concept1.html)
 - 📖 [Concept 2](/topics/concept2.html)
 - 📖 [Concept 3](/topics/concept3.html)
@@ -36,6 +38,7 @@ Before starting this project, review these concept pages:
 [Detailed description of the problem you're solving]
 
 ### Dataset
+
 - **Source:** [Where the data comes from]
 - **Features:** [List of input features]
 - **Target:** [What you're predicting/classifying]
@@ -46,6 +49,7 @@ Before starting this project, review these concept pages:
 ## 🔧 Implementation
 
 ### Step 1: [First Step]
+
 ```python
 # Implementation code with comments
 def step_one():
@@ -54,6 +58,7 @@ def step_one():
 ```
 
 ### Step 2: [Second Step]
+
 ```python
 # More implementation
 def step_two():
@@ -62,6 +67,7 @@ def step_two():
 ```
 
 ### Step 3: [Third Step]
+
 ```python
 # Continue with implementation
 def step_three():
@@ -74,11 +80,13 @@ def step_three():
 ## 📊 Results & Analysis
 
 ### Performance Metrics
+
 - **Metric 1:** [Value and interpretation]
 - **Metric 2:** [Value and interpretation]
 - **Metric 3:** [Value and interpretation]
 
 ### Visualizations
+
 1. **Plot 1** - [Description]
 2. **Plot 2** - [Description]
 3. **Plot 3** - [Description]
@@ -88,16 +96,19 @@ def step_three():
 ## 💡 Key Learnings
 
 ### Mathematical Insights
+
 - [Learning 1]
 - [Learning 2]
 - [Learning 3]
 
 ### Implementation Insights
+
 - [Insight 1]
 - [Insight 2]
 - [Insight 3]
 
 ### Next Steps
+
 - [Future improvement 1]
 - [Future improvement 2]
 - [Future improvement 3]
@@ -107,6 +118,7 @@ def step_three():
 ## 🔄 Concept Updates
 
 This project helped update the following concept pages:
+
 - ✅ [Concept 1](/topics/concept1.html) - [What was added/updated]
 - 🔄 [Concept 2](/topics/concept2.html) - [What needs to be updated]
 - 🔄 [Concept 3](/topics/concept3.html) - [What needs to be created]
@@ -128,4 +140,4 @@ project[X]-[name]/
     └── [output files and plots]
 ```
 
-*[Add actual implementation files and results as you complete the project]*
+_[Add actual implementation files and results as you complete the project]_

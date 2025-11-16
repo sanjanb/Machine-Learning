@@ -110,7 +110,29 @@
   <li>Multiclass classification</li>
 </ul>
 
-<p><em>Detailed notes to be added.</em></p>
+<h3 id="mathematical-foundation">Mathematical Foundation</h3>
+
+<p>Sigmoid function:
+\(g(z) = \frac{1}{1 + e^{-z}}\)</p>
+
+<p>Hypothesis function:
+\(h_\theta(x) = g(\theta^T x) = \frac{1}{1 + e^{-\theta^T x}}\)</p>
+
+<p>Cost function:
+\(J(\theta) = \frac{1}{m} \sum_{i=1}^{m} [-y^{(i)} \log(h_\theta(x^{(i)})) - (1-y^{(i)}) \log(1-h_\theta(x^{(i)}))]\)</p>
+
+<h3 id="practical-implementation">Practical Implementation</h3>
+
+<p>📊 <strong>See this concept in action:</strong> <a href="/projects/project2-logistic-regression.html">Project 2: Classification with Logistic Regression</a> <em>(Coming Soon)</em></p>
+
+<h3 id="applications">Applications</h3>
+<ul>
+  <li>Email spam detection</li>
+  <li>Medical diagnosis</li>
+  <li>Marketing response prediction</li>
+</ul>
+
+<p><em>Detailed notes to be added based on project learnings.</em></p>
 </main>
     </div>
   </body>
