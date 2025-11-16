@@ -3,6 +3,7 @@ title: "Machine Learning Notes"
 keywords: cs229, machine learning, stanford
 sidebar: sidebar
 permalink: index.html
+layout: default
 toc: false
 ---
 
