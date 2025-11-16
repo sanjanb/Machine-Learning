@@ -3,6 +3,7 @@ title: Linear Regression
 keywords: cs229, machine learning, linear regression
 sidebar: sidebar
 permalink: topics/linear_regression.html
+layout: default
 folder: topics
 ---
 

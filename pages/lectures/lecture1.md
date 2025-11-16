@@ -3,6 +3,7 @@ title: Lecture 1 - Introduction
 keywords: cs229, machine learning
 sidebar: sidebar
 permalink: lectures/lecture1.html
+layout: default
 folder: lectures
 ---
 

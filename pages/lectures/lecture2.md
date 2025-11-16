@@ -3,6 +3,7 @@ title: Lecture 2 - Supervised Learning
 keywords: cs229, machine learning, supervised learning
 sidebar: sidebar
 permalink: lectures/lecture2.html
+layout: default
 folder: lectures
 ---
 
