@@ -24,6 +24,7 @@ Update rule:
 $$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta)$$
 
 Where:
+
 - $\theta_j$ = parameter j
 - $\alpha$ = learning rate
 - $J(\theta)$ = cost function
@@ -37,8 +38,9 @@ Where:
 ### Practical Implementation
 
 📊 **See this concept in action:**
+
 - [Project 1: Linear Regression Analysis](/projects/project1-linear-regression.html)
-- [Project 2: Logistic Regression](/projects/project2-logistic-regression.html) *(Coming Soon)*
+- [Project 2: Logistic Regression](/projects/project2-logistic-regression.html) _(Coming Soon)_
 
 ### Learning Rate Selection
 
@@ -46,4 +48,4 @@ Where:
 - **Too large:** May overshoot minimum
 - **Just right:** Efficient convergence
 
-*Detailed notes and visualizations to be added based on project implementations.*
+_Detailed notes and visualizations to be added based on project implementations._
