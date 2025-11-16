@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://sanjanb.github.io/MachineLearning-Notes/</loc>
+<loc>http://localhost:4000/Machine-Learning/references/books.html</loc>
 </url>
 <url>
-<loc>https://sanjanb.github.io/MachineLearning-Notes/lectures/lecture1.html</loc>
+<loc>http://localhost:4000/Machine-Learning/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Machine-Learning/lectures/lecture1.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Machine-Learning/lectures/lecture2.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Machine-Learning/topics/linear_regression.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Machine-Learning/topics/logistic_regression.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Machine-Learning/intro/syllabus.html</loc>
 </url>
 </urlset>
