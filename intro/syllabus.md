@@ -3,6 +3,7 @@ title: Syllabus
 keywords: cs229, machine learning, syllabus
 sidebar: sidebar
 permalink: intro/syllabus.html
+layout: default
 folder: intro
 ---
 

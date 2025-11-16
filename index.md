@@ -14,18 +14,19 @@ This site is built using the **[documentation-theme-jekyll](https://github.com/t
 
 ---
 
-
 ## Structure
+
 The notes are organized as follows:
 
-- **Introduction** – Course overview and syllabus  
-- **Lecture Notes** – Summaries of each lecture  
-- **Topics** – Detailed write-ups on algorithms and concepts  
+- **Introduction** – Course overview and syllabus
+- **Lecture Notes** – Summaries of each lecture
+- **Topics** – Detailed write-ups on algorithms and concepts
 - **References** – Links, books, and papers
 
 ---
 
 ## Quick Links
+
 - [Syllabus](/intro/syllabus.html)
 - [Lecture 1: Introduction](/lectures/lecture1.html)
 - [Linear Regression](/topics/linear_regression.html)
@@ -33,6 +34,7 @@ The notes are organized as follows:
 ---
 
 ## Updates
+
 I’ll be updating these notes regularly as I progress through the course.
 
 ---

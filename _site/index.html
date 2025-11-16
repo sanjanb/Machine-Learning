@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Machine Learning Notes | Machine Learning Notes</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
-        .container { max-width: 1200px; margin: 0 auto; display: flex; gap: 20px; }
-        .sidebar { flex: 0 0 250px; background: #f8f9fa; padding: 20px; border-radius: 8px; }
-        .content { flex: 1; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .nav-link { display: block; padding: 8px 12px; text-decoration: none; color: #333; border-radius: 4px; margin: 2px 0; }
-        .nav-link:hover { background: #e9ecef; }
-        h1, h2, h3 { color: #2c3e50; }
-        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
-        pre { background: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+      }
+      .sidebar {
+        flex: 0 0 250px;
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .content {
+        flex: 1;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .nav-link {
+        display: block;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #333;
+        border-radius: 4px;
+        margin: 2px 0;
+      }
+      .nav-link:hover {
+        background: #e9ecef;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+      code {
+        background: #f4f4f4;
+        padding: 2px 6px;
+        border-radius: 3px;
+      }
+      pre {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav class="sidebar">
-            <h3>Navigation</h3>
-            <a href="/Machine-Learning/" class="nav-link">Home</a>
-            <h4>Introduction</h4>
-            <a href="/Machine-Learning/intro/syllabus.html" class="nav-link">Syllabus</a>
-            <h4>Lectures</h4>
-            <a href="/Machine-Learning/lectures/lecture1.html" class="nav-link">Lecture 1</a>
-            <a href="/Machine-Learning/lectures/lecture2.html" class="nav-link">Lecture 2</a>
-            <h4>Topics</h4>
-            <a href="/Machine-Learning/topics/linear_regression.html" class="nav-link">Linear Regression</a>
-            <a href="/Machine-Learning/topics/logistic_regression.html" class="nav-link">Logistic Regression</a>
-            <h4>References</h4>
-            <a href="/Machine-Learning/references/books.html" class="nav-link">Books & Papers</a>
-            <a href="/Machine-Learning/Foundations/" class="nav-link">Foundation Resources</a>
-        </nav>
-        <main class="content">
-            <h1 id="machine-learning-notes">Machine Learning Notes</h1>
+      <nav class="sidebar">
+        <h3>Navigation</h3>
+        <a href="/Machine-Learning/" class="nav-link">Home</a>
+        <h4>Introduction</h4>
+        <a href="/Machine-Learning/intro/syllabus.html" class="nav-link"
+          >Syllabus</a
+        >
+        <h4>Lectures</h4>
+        <a href="/Machine-Learning/lectures/lecture1.html" class="nav-link"
+          >Lecture 1</a
+        >
+        <a href="/Machine-Learning/lectures/lecture2.html" class="nav-link"
+          >Lecture 2</a
+        >
+        <h4>Topics</h4>
+        <a
+          href="/Machine-Learning/topics/linear_regression.html"
+          class="nav-link"
+          >Linear Regression</a
+        >
+        <a
+          href="/Machine-Learning/topics/logistic_regression.html"
+          class="nav-link"
+          >Logistic Regression</a
+        >
+        <h4>References</h4>
+        <a href="/Machine-Learning/references/books.html" class="nav-link"
+          >Books & Papers</a
+        >
+        <a href="/Machine-Learning/Foundations/" class="nav-link"
+          >Foundation Resources</a
+        >
+      </nav>
+      <main class="content"><h1 id="machine-learning-notes">Machine Learning Notes</h1>
 
 <p>Welcome to my personal notes for <a href="http://cs229.stanford.edu/">Stanford’s CS229: Machine Learning</a>.<br />
 This site is built using the <strong><a href="https://github.com/tomjoht/documentation-theme-jekyll">documentation-theme-jekyll</a></strong> and hosted on GitHub Pages.</p>
@@ -42,6 +103,7 @@ This site is built using the <strong><a href="https://github.com/tomjoht/documen
 <hr />
 
 <h2 id="structure">Structure</h2>
+
 <p>The notes are organized as follows:</p>
 
 <ul>
@@ -54,6 +116,7 @@ This site is built using the <strong><a href="https://github.com/tomjoht/documen
 <hr />
 
 <h2 id="quick-links">Quick Links</h2>
+
 <ul>
   <li><a href="/intro/syllabus.html">Syllabus</a></li>
   <li><a href="/lectures/lecture1.html">Lecture 1: Introduction</a></li>
@@ -63,13 +126,13 @@ This site is built using the <strong><a href="https://github.com/tomjoht/documen
 <hr />
 
 <h2 id="updates">Updates</h2>
+
 <p>I’ll be updating these notes regularly as I progress through the course.</p>
 
 <hr />
 
 <p><strong>Disclaimer:</strong> These notes are for personal study and reference only. For the official course material, visit <a href="http://cs229.stanford.edu/">cs229.stanford.edu</a>.</p>
-
-        </main>
+</main>
     </div>
-</body>
+  </body>
 </html>
