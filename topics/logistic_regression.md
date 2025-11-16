@@ -11,9 +11,10 @@ folder: topics
 This section covers Logistic Regression for classification tasks.
 
 ### Key Concepts
+
 - Sigmoid function
 - Cost function for logistic regression
 - Gradient descent
 - Multiclass classification
 
-*Detailed notes to be added.*
+_Detailed notes to be added._
