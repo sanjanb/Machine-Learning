@@ -31,11 +31,12 @@ $$J(\theta) = \frac{1}{m} \sum_{i=1}^{m} [-y^{(i)} \log(h_\theta(x^{(i)})) - (1-
 
 ### Practical Implementation
 
-📊 **See this concept in action:** [Project 2: Classification with Logistic Regression](/projects/project2-logistic-regression.html) *(Coming Soon)*
+📊 **See this concept in action:** [Project 2: Classification with Logistic Regression](/projects/project2-logistic-regression.html) _(Coming Soon)_
 
 ### Applications
+
 - Email spam detection
 - Medical diagnosis
 - Marketing response prediction
 
-*Detailed notes to be added based on project learnings.*
+_Detailed notes to be added based on project learnings._

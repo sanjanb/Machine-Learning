@@ -34,8 +34,9 @@ $$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta)$$
 📊 **See this concept in action:** [Project 1: Linear Regression Analysis](/projects/project1-linear-regression.html)
 
 ### Applications
+
 - Predicting house prices
-- Sales forecasting  
+- Sales forecasting
 - Risk assessment
 
-*Detailed notes to be added based on project learnings.*
+_Detailed notes to be added based on project learnings._

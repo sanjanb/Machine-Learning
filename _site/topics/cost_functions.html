@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logistic Regression | Machine Learning Notes</title>
+    <title>Cost Functions | Machine Learning Notes</title>
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -97,43 +97,76 @@
           >Foundation Resources</a
         >
       </nav>
-      <main class="content"><h2 id="logistic-regression">Logistic Regression</h2>
+      <main class="content"><h2 id="cost-functions">Cost Functions</h2>
 
-<p>This section covers Logistic Regression for classification tasks.</p>
+<p>Cost functions (also called loss functions) measure how well our model predictions match the actual values.</p>
 
 <h3 id="key-concepts">Key Concepts</h3>
 
 <ul>
-  <li>Sigmoid function</li>
-  <li>Cost function for logistic regression</li>
-  <li>Gradient descent</li>
-  <li>Multiclass classification</li>
+  <li>Mean Squared Error (MSE)</li>
+  <li>Cross-entropy loss</li>
+  <li>Regularization</li>
+  <li>Bias-variance tradeoff</li>
 </ul>
 
-<h3 id="mathematical-foundation">Mathematical Foundation</h3>
+<h3 id="common-cost-functions">Common Cost Functions</h3>
 
-<p>Sigmoid function:
-\(g(z) = \frac{1}{1 + e^{-z}}\)</p>
+<h4 id="1-mean-squared-error-regression">1. Mean Squared Error (Regression)</h4>
+<p>\(J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2\)</p>
 
-<p>Hypothesis function:
-\(h_\theta(x) = g(\theta^T x) = \frac{1}{1 + e^{-\theta^T x}}\)</p>
+<h4 id="2-logistic-loss-classification">2. Logistic Loss (Classification)</h4>
+<p>\(J(\theta) = \frac{1}{m} \sum_{i=1}^{m} [-y^{(i)} \log(h_\theta(x^{(i)})) - (1-y^{(i)}) \log(1-h_\theta(x^{(i)}))]\)</p>
 
-<p>Cost function:
-\(J(\theta) = \frac{1}{m} \sum_{i=1}^{m} [-y^{(i)} \log(h_\theta(x^{(i)})) - (1-y^{(i)}) \log(1-h_\theta(x^{(i)}))]\)</p>
+<h4 id="3-regularized-cost-functions">3. Regularized Cost Functions</h4>
+<p><strong>L1 Regularization (Lasso):</strong>
+\(J(\theta) = \text{Original Cost} + \lambda \sum_{j=1}^{n} |\theta_j|\)</p>
+
+<p><strong>L2 Regularization (Ridge):</strong>
+\(J(\theta) = \text{Original Cost} + \lambda \sum_{j=1}^{n} \theta_j^2\)</p>
 
 <h3 id="practical-implementation">Practical Implementation</h3>
 
-<p>📊 <strong>See this concept in action:</strong> <a href="/projects/project2-logistic-regression.html">Project 2: Classification with Logistic Regression</a> <em>(Coming Soon)</em></p>
-
-<h3 id="applications">Applications</h3>
-
+<p>📊 <strong>See this concept in action:</strong></p>
 <ul>
-  <li>Email spam detection</li>
-  <li>Medical diagnosis</li>
-  <li>Marketing response prediction</li>
+  <li><a href="/projects/project1-linear-regression.html">Project 1: Linear Regression Analysis</a></li>
+  <li><a href="/projects/project2-logistic-regression.html">Project 2: Logistic Regression</a> <em>(Coming Soon)</em></li>
 </ul>
 
-<p><em>Detailed notes to be added based on project learnings.</em></p>
+<h3 id="choosing-the-right-cost-function">Choosing the Right Cost Function</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Problem Type</th>
+      <th>Recommended Cost Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regression</td>
+      <td>Mean Squared Error (MSE)</td>
+    </tr>
+    <tr>
+      <td>Binary Classification</td>
+      <td>Logistic Loss</td>
+    </tr>
+    <tr>
+      <td>Multi-class Classification</td>
+      <td>Cross-entropy Loss</td>
+    </tr>
+    <tr>
+      <td>Sparse Features</td>
+      <td>L1 Regularized</td>
+    </tr>
+    <tr>
+      <td>Prevent Overfitting</td>
+      <td>L2 Regularized</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Detailed examples and visualizations to be added based on project implementations.</em></p>
 </main>
     </div>
   </body>
