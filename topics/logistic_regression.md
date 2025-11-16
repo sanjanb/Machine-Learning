@@ -3,6 +3,7 @@ title: Logistic Regression
 keywords: cs229, machine learning, logistic regression
 sidebar: sidebar
 permalink: topics/logistic_regression.html
+layout: default
 folder: topics
 ---
 

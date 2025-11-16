@@ -3,6 +3,7 @@ title: Books & Papers
 keywords: cs229, machine learning, references
 sidebar: sidebar
 permalink: references/books.html
+layout: default
 folder: references
 ---
 

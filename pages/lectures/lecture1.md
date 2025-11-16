@@ -8,10 +8,13 @@ folder: lectures
 ---
 
 ## Date
+
 Fall 2025 (following Stanford's CS229 curriculum)
 
 ## Summary
+
 This lecture introduced:
+
 - Course structure
 - Types of learning (supervised, unsupervised, reinforcement)
 - Notation used in the course
