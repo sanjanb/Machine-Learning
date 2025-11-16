@@ -19,18 +19,21 @@
 ## Quick Commands
 
 ### Start Development Server
+
 ```bash
 cd 'd:\Projects\Teaching\Machine-Learning'
 jekyll serve --host 127.0.0.1 --port 4000
 ```
 
 ### Build Site
+
 ```bash
 cd 'd:\Projects\Teaching\Machine-Learning'
 jekyll build
 ```
 
 ## File Structure
+
 ```
 Machine-Learning/
 ├── _layouts/           # HTML layouts
@@ -48,7 +51,9 @@ Machine-Learning/
 ## Writing Tips
 
 ### Math Equations
+
 Use LaTeX syntax with `$$` for block equations:
+
 ```markdown
 $$
 \theta = \theta - \alpha \frac{\partial J(\theta)}{\partial \theta}
@@ -58,6 +63,7 @@ $$
 Use `$` for inline equations: `$\theta_0$`
 
 ### Code Blocks
+
 ```python
 # Python code
 def gradient_descent(X, y, theta, alpha, iterations):
@@ -69,5 +75,6 @@ def gradient_descent(X, y, theta, alpha, iterations):
 ```
 
 ### Links
+
 - Internal: `[Link text](/path/to/page.html)`
 - External: `[Link text](https://external-url.com)`
