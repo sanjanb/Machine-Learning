@@ -2,7 +2,7 @@ title: "Machine Learning Notes"
 description: "My personal documentation for Machine Learning course"
 theme: null
 url: "https://sanjanb.github.io"
-baseurl: "/MachineLearning-Notes"
+baseurl: "/Machine-Learning"
 
 remote_theme: tomjoht/documentation-theme-jekyll
 
@@ -11,7 +11,6 @@ sidebar:
   nav: sidebar
 markdown: kramdown
 highlighter: rouge
-
 
 plugins:
   - jekyll-seo-tag
