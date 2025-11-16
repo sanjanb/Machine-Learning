@@ -7,10 +7,13 @@ folder: lectures
 ---
 
 ## Date
+
 Fall 2025 (following Stanford's CS229 curriculum)
 
 ## Summary
+
 This lecture will cover:
+
 - Supervised learning fundamentals
 - Linear regression
 - Gradient descent
@@ -18,4 +21,4 @@ This lecture will cover:
 
 **Reference:** [CS229 Official Notes](http://cs229.stanford.edu/)
 
-*Content to be added as lecture progresses.*
+_Content to be added as lecture progresses._
