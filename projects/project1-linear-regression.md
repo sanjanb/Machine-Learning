@@ -16,6 +16,7 @@ folder: projects
 **Status:** 🚧 In Progress
 
 **Skills Learned:**
+
 - Mathematical foundation of linear regression
 - Gradient descent optimization
 - Cost function analysis
@@ -26,9 +27,10 @@ folder: projects
 ## 🔗 Related Concepts
 
 Before starting this project, review these concept pages:
+
 - 📖 [Linear Regression Theory](/topics/linear_regression.html)
-- 📖 [Gradient Descent](/topics/gradient_descent.html) *(to be created)*
-- 📖 [Cost Functions](/topics/cost_functions.html) *(to be created)*
+- 📖 [Gradient Descent](/topics/gradient_descent.html) _(to be created)_
+- 📖 [Cost Functions](/topics/cost_functions.html) _(to be created)_
 
 ---
 
@@ -37,6 +39,7 @@ Before starting this project, review these concept pages:
 We'll predict house prices based on features like size, number of bedrooms, and location. This is a classic regression problem where we want to find the best line (or hyperplane) that fits our data.
 
 ### Dataset
+
 - **Source:** Housing price dataset
 - **Features:** Square footage, bedrooms, bathrooms, age
 - **Target:** Price in thousands of dollars
@@ -46,6 +49,7 @@ We'll predict house prices based on features like size, number of bedrooms, and 
 ## 🔧 Implementation
 
 ### Step 1: Data Preparation
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -63,6 +67,7 @@ def normalize_features(X):
 ```
 
 ### Step 2: Cost Function
+
 ```python
 def compute_cost(X, y, theta):
     """
@@ -75,6 +80,7 @@ def compute_cost(X, y, theta):
 ```
 
 ### Step 3: Gradient Descent
+
 ```python
 def gradient_descent(X, y, theta, alpha, iterations):
     """
@@ -83,12 +89,12 @@ def gradient_descent(X, y, theta, alpha, iterations):
     """
     m = len(y)
     cost_history = []
-    
+
     for i in range(iterations):
         predictions = X.dot(theta)
         theta = theta - (alpha/m) * X.T.dot(predictions - y)
         cost_history.append(compute_cost(X, y, theta))
-    
+
     return theta, cost_history
 ```
 
@@ -97,6 +103,7 @@ def gradient_descent(X, y, theta, alpha, iterations):
 ## 📊 Results & Analysis
 
 ### Cost Function Convergence
+
 ```python
 # Plot cost function over iterations
 def plot_cost_function(cost_history):
@@ -110,11 +117,13 @@ def plot_cost_function(cost_history):
 ```
 
 ### Model Performance
+
 - **Final Cost:** [To be calculated]
 - **R² Score:** [To be calculated]
 - **Mean Squared Error:** [To be calculated]
 
 ### Visualizations
+
 1. **Scatter plot** of actual vs predicted prices
 2. **Cost function** convergence over iterations
 3. **Feature importance** analysis
@@ -124,16 +133,19 @@ def plot_cost_function(cost_history):
 ## 💡 Key Learnings
 
 ### Mathematical Insights
+
 - How gradient descent finds the optimal parameters
 - The importance of feature normalization
 - Relationship between learning rate and convergence
 
 ### Implementation Insights
+
 - Vectorized operations are much faster than loops
 - Proper data preprocessing is crucial
 - Visualization helps understand the learning process
 
 ### Next Steps
+
 - Experiment with different learning rates
 - Try polynomial features
 - Compare with scikit-learn implementation
@@ -143,9 +155,10 @@ def plot_cost_function(cost_history):
 ## 🔄 Concept Updates
 
 This project helped update the following concept pages:
+
 - ✅ [Linear Regression](/topics/linear_regression.html) - Added practical examples
-- 🔄 [Gradient Descent](/topics/gradient_descent.html) - *To be created with project insights*
-- 🔄 [Cost Functions](/topics/cost_functions.html) - *To be created with visualizations*
+- 🔄 [Gradient Descent](/topics/gradient_descent.html) - _To be created with project insights_
+- 🔄 [Cost Functions](/topics/cost_functions.html) - _To be created with visualizations_
 
 ---
 
@@ -164,4 +177,4 @@ project1-linear-regression/
     └── plots/
 ```
 
-*[Add actual implementation files and results as you complete the project]*
+_[Add actual implementation files and results as you complete the project]_
