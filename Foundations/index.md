@@ -1,4 +1,10 @@
-# AI Resources
+---
+title: "Foundation Resources"
+layout: default
+---
+# Foundation AI Resources
+
+## Essential Books
 - Pattern Recognition and ML - Christopher M. Bishop
 - ISLR - James, Witten, Hastie, Tibshirani & Taylor
 - Probabilistic Machine Learning - Kevin P. Murphy
