@@ -13,9 +13,6 @@
 <loc>http://localhost:4000/Machine-Learning/projects/1-linear-regression.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/Machine-Learning/Foundations/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/Machine-Learning/projects/2-multiple-linear-regression.html</loc>
 </url>
 <url>
@@ -23,6 +20,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/Machine-Learning/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Machine-Learning/Foundations/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/Machine-Learning/lectures/lecture1.html</loc>
@@ -35,12 +35,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/Machine-Learning/topics/logistic_regression.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/Machine-Learning/projects/2-multiple-linear-regression/notebook</loc>
-</url>
-<url>
-<loc>http://localhost:4000/Machine-Learning/projects/1-linear-regression/notebook</loc>
 </url>
 <url>
 <loc>http://localhost:4000/Machine-Learning/projects/project1-linear-regression.html</loc>
