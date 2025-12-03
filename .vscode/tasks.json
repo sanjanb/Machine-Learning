@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Watch: ipynb -> markdown",
+			"type": "shell",
+			"command": "powershell.exe",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				"scripts\\watch-ipynb-convert.ps1"
+			],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
