@@ -7,13 +7,13 @@ layout: default
 folder: projects
 ---
 
-# 📊 Project [X]: [PROJECT NAME]
+# Project [X]: [PROJECT NAME]
 
-## 🎯 Project Overview
+## Project Overview
 
 **Objective:** [Clear statement of what this project aims to achieve]
 
-**Status:** 📋 Planned / 🚧 In Progress / ✅ Complete
+**Status:** Planned / In Progress / Complete
 
 **Skills Learned:**
 
@@ -23,17 +23,17 @@ folder: projects
 
 ---
 
-## 🔗 Related Concepts
+## Related Concepts
 
 Before starting this project, review these concept pages:
 
-- 📖 [Concept 1](/topics/concept1.html)
-- 📖 [Concept 2](/topics/concept2.html)
-- 📖 [Concept 3](/topics/concept3.html)
+- [Concept 1](/topics/concept1.html)
+- [Concept 2](/topics/concept2.html)
+- [Concept 3](/topics/concept3.html)
 
 ---
 
-## 📝 Problem Statement
+## Problem Statement
 
 [Detailed description of the problem you're solving]
 
@@ -46,7 +46,7 @@ Before starting this project, review these concept pages:
 
 ---
 
-## 🔧 Implementation
+## Implementation
 
 ### Step 1: [First Step]
 
@@ -77,7 +77,7 @@ def step_three():
 
 ---
 
-## 📊 Results & Analysis
+## Results & Analysis
 
 ### Performance Metrics
 
@@ -93,7 +93,7 @@ def step_three():
 
 ---
 
-## 💡 Key Learnings
+## Key Learnings
 
 ### Mathematical Insights
 
@@ -115,7 +115,7 @@ def step_three():
 
 ---
 
-## 🔄 Concept Updates
+## Concept Updates
 
 This project helped update the following concept pages:
 
@@ -125,7 +125,7 @@ This project helped update the following concept pages:
 
 ---
 
-## 📁 Project Files
+## Project Files
 
 ```
 project[X]-[name]/

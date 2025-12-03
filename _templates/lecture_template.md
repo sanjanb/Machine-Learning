@@ -1,6 +1,6 @@
 ---
 title: Lecture X - [TOPIC NAME]
-keywords: cs229, machine learning, [KEYWORDS]
+keywords: machine learning, [KEYWORDS]
 sidebar: sidebar
 permalink: lectures/lectureX.html
 layout: default
@@ -9,7 +9,7 @@ folder: lectures
 
 ## Date
 
-Fall 2025 (following Stanford's CS229 curriculum)
+Date: [Term/Year]
 
 ## Summary
 
@@ -45,7 +45,7 @@ This lecture covers:
 
 ## References
 
-- **Reference:** [CS229 Official Notes](http://cs229.stanford.edu/)
+- Authoritative sources: [Textbook/Paper link]
 - Additional readings: [Link if any]
 
 ## Notes
