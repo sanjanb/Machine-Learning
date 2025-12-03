@@ -18,7 +18,7 @@ function Convert-Notebook([string]$filePath) {
         & $pythonExe -m jupyter nbconvert --to markdown $filePath --output $outputName | Out-String | Write-Host
     }
     catch {
-        Write-Warning "Conversion failed for $filePath: $($_.Exception.Message)"
+        Write-Warning "Conversion failed for ${filePath}: $($_.Exception.Message)"
     }
 }
 

@@ -13,6 +13,13 @@
 			],
 			"isBackground": true,
 			"group": "build"
+		},
+		{
+			"label": "Watch: ipynb -> markdown",
+			"type": "shell",
+			"command": "powershell.exe -ExecutionPolicy Bypass -File scripts\\watch-ipynb-convert.ps1",
+			"isBackground": true,
+			"group": "build"
 		}
 	]
 }
