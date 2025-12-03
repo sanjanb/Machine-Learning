@@ -14,7 +14,7 @@ This project implements multiple linear regression using features like area, bed
 
 - Data: [homeprices.csv](</projects/2.%20Linear%20Regression%20with%20multiple%20features/homeprices%20(1).csv>)
 - Data: [hiring.csv](/projects/2.%20Linear%20Regression%20with%20multiple%20features/hiring.csv)
-- Notebook: [linear-regression-with-multiple-variables.ipynb](/projects/2.%20Linear%20Regression%20with%20multiple%20features/linear-regression-with-multiple-variables.ipynb)
+- Notebook: [View rendered notebook](/projects/2-multiple-linear-regression/notebook)
 
 ## Summary
 

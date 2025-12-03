@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Project 1 Notebook"
+permalink: projects/1-linear-regression/notebook
+---
+
+Note: This notebook was originally created in Kaggle. Paths and environment references have been adjusted for local files where applicable.
+
 ```python
 # This Python 3 environment comes with many helpful analytics libraries installed
 # It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python
@@ -11,8 +19,8 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
 import os
 for dirname, _, filenames in os.walk('/kaggle/input'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
+  for filename in filenames:
+    print(os.path.join(dirname, filename))
 
 # You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
 # You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
@@ -30,7 +38,7 @@ from sklearn import linear_model
 
 
 ```python
-df = pd.read_csv('/kaggle/input/homeprices/homeprices.csv')
+df = pd.read_csv('./homeprices.csv')
 ```
 
 
