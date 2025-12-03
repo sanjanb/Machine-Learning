@@ -12,21 +12,21 @@ This section contains practical projects that implement various machine learning
 
 ## Current Projects
 
-### 📊 [Project 1: Simple Linear Regression](/projects/1-linear-regression.html)
+### Project 1: Simple Linear Regression
 
-**Status:** 🚧 In Progress  
+**Status:** In Progress  
 **Concepts Used:** Linear Regression, Gradient Descent, Cost Functions  
 **Description:** Implementation using a single feature (area) to predict home prices. Links to dataset and notebook included.
 
-### 📈 [Project 2: Multiple Linear Regression](/projects/2-multiple-linear-regression.html)
+### Project 2: Multiple Linear Regression
 
-**Status:** 🚧 In Progress  
+**Status:** In Progress  
 **Concepts Used:** Multiple Linear Regression, Data Cleaning, Gradient Descent  
 **Description:** Predicts home prices using area, bedrooms, and age. Includes data preprocessing and model evaluation.
 
-### 🎯 [Project: Classification with Logistic Regression](project2-logistic-regression.html)
+### Project: Classification with Logistic Regression
 
-**Status:** 📋 Planned  
+**Status:** Planned  
 **Concepts Used:** Logistic Regression, Sigmoid Function, Classification  
 **Description:** Binary and multiclass classification using logistic regression.
 
