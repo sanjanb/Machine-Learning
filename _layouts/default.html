@@ -3,7 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description | strip_html }}"
+    />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      property="og:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta
+      property="og:description"
+      content="{{ page.description | default: site.description | strip_html }}"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ page.description | default: site.description | strip_html }}"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ '/assets/favicon.ico' | relative_url }}"
+    />
+
+    {% seo %}
+
+    <!-- Google Analytics - Replace with your tracking ID -->
+    {% if site.google_analytics %}
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "{{ site.google_analytics }}");
+    </script>
+    {% endif %}
+
+    <title>{{ page.title | default: site.title }}</title>
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

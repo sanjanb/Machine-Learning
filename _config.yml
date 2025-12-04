@@ -16,3 +16,29 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-feed
+  - jekyll-compress-images
+
+# SEO and Analytics
+author: "Your Name"
+social:
+  name: "Your Name"
+  links:
+    - "https://github.com/sanjanb"
+
+# Google Analytics (replace with your tracking ID)
+# google_analytics: "G-XXXXXXXXXX"
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: [html, head, body]
+  blanklines: false
+  profile: false
+
+# Cache busting
+sass:
+  style: compressed
+  sourcemap: never
