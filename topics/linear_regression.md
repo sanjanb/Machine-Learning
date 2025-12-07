@@ -31,7 +31,7 @@ $$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta)$$
 
 ### Practical Implementation
 
-📊 **See this concept in action:** [Project 1: Linear Regression Analysis](/projects/project1-linear-regression.html)
+📊 **See this concept in action:** [Project 1: Simple Linear Regression](/Machine-Learning/projects/1-linear-regression.html) and [Project 2: Multiple Linear Regression](/Machine-Learning/projects/2-multiple-linear-regression.html)
 
 ### Applications
 

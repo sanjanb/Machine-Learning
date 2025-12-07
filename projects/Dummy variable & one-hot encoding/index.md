@@ -21,7 +21,7 @@ This project covers handling categorical data using dummy variables and one-hot 
 
 ## Datasets
 
-- [homeprices.csv](/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv)
+- [homeprices.csv](</Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv>)
 - [carprices.csv](/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/carprices.csv)
 
 ## Related Topics

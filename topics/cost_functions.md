@@ -40,7 +40,8 @@ $$J(\theta) = \text{Original Cost} + \lambda \sum_{j=1}^{n} \theta_j^2$$
 
 📊 **See this concept in action:**
 
-- [Project 1: Linear Regression Analysis](/projects/project1-linear-regression.html)
+- [Project 1: Simple Linear Regression](/Machine-Learning/projects/1-linear-regression.html)
+- [Project 3: Gradient Descent](/Machine-Learning/projects/gradient-descent.html)
 - [Project 2: Logistic Regression](/projects/project2-logistic-regression.html) _(Coming Soon)_
 
 ### Choosing the Right Cost Function
