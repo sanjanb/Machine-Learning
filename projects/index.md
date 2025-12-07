@@ -72,6 +72,54 @@ This section contains practical projects that implement various machine learning
 .card p { margin: 0.25rem 0; }
 </style>
 
+## More Projects
+
+<div class="cards">
+
+<div class="card">
+	<h3>Logistic Regression</h3>
+	<p>Classification with logistic regression.</p>
+	<p><a class="nav-link" href="/projects/logistic-regression.html">Project page</a> · <a class="nav-link" href="/topics/logistic_regression.html">Theory</a></p>
+</div>
+
+<div class="card">
+	<h3>Multiclass Logistic Regression</h3>
+	<p>Softmax regression and OvR strategies.</p>
+	<p><a class="nav-link" href="/projects/multiclass-logistic-regression.html">Project page</a></p>
+</div>
+
+<div class="card">
+	<h3>Decision Trees</h3>
+	<p>Tree-based models for classification/regression.</p>
+	<p><a class="nav-link" href="/projects/decision-trees.html">Project page</a></p>
+</div>
+
+<div class="card">
+	<h3>Gradient Descent (Applied)</h3>
+	<p>Optimizing models with GD variants.</p>
+	<p><a class="nav-link" href="/projects/gradient-descent.html">Project page</a> · <a class="nav-link" href="/topics/gradient_descent.html">Theory</a></p>
+</div>
+
+<div class="card">
+	<h3>Dummy Variables & One-Hot</h3>
+	<p>Encode categorical features for ML.</p>
+	<p><a class="nav-link" href="/projects/encoding.html">Project page</a></p>
+</div>
+
+<div class="card">
+	<h3>Train/Test Split</h3>
+	<p>Proper dataset splitting and evaluation.</p>
+	<p><a class="nav-link" href="/projects/train-test-split.html">Project page</a></p>
+</div>
+
+<div class="card">
+	<h3>Save & Load Models</h3>
+	<p>Persist models reliably with joblib/pickle.</p>
+	<p><a class="nav-link" href="/projects/save-model.html">Project page</a></p>
+</div>
+
+</div>
+
 ### Project 2: Multiple Linear Regression
 
 **Status:** In Progress  
