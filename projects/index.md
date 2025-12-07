@@ -48,7 +48,7 @@ This section contains practical projects that implement various machine learning
 	<p>Binary and multiclass classification using logistic regression.</p>
 	<p><strong>Concepts:</strong> Logistic Regression, Sigmoid Function, Classification</p>
 	<p>
-		<a class="nav-link" href="/topics/logistic_regression.html">Theory</a>
+		<a class="nav-link" href="/Machine-Learning/topics/logistic_regression.html">Theory</a>
 	</p>
 	<p><em>Status:</em> Planned</p>
 	</div>

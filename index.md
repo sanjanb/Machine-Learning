@@ -27,9 +27,10 @@ The notes are organized as follows:
 
 ## Quick Links
 
-- [Syllabus](/intro/syllabus.html)
-- [Lecture 1: Introduction](/lectures/lecture1.html)
-- [Linear Regression](/topics/linear_regression.html)
+- [Syllabus](/Machine-Learning/intro/syllabus.html)
+- [Lecture 1: Introduction](/Machine-Learning/lectures/lecture1.html)
+- [Linear Regression](/Machine-Learning/topics/linear_regression.html)
+- [Projects Overview](/Machine-Learning/projects/)
 
 ---
 

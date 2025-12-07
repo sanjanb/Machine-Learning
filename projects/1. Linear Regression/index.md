@@ -12,8 +12,8 @@ This project implements simple linear regression using a single feature (area) t
 
 ## Files
 
-- Data: [homeprices.csv](/projects/1.%20Linear%20Regression/homeprices.csv)
-- Notebook: [View rendered notebook](/projects/1-linear-regression/notebook)
+- Data: [homeprices.csv](/Machine-Learning/projects/1.%20Linear%20Regression/homeprices.csv)
+- Notebook: [View rendered notebook](/Machine-Learning/projects/1-linear-regression/notebook)
 
 ## Summary
 
