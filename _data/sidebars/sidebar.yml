@@ -1,61 +1,61 @@
 entries:
-- title: CS229 Machine Learning Notes
-  product: CS229
-  folders:
-    - title: Introduction
-      output: web
-      folderitems:
-        - title: Syllabus
-          url: /Machine-Learning/intro/syllabus.html
-          output: web
-    - title: Lecture Notes
-      output: web
-      folderitems:
-        - title: Lecture 1 - Introduction
-          url: /Machine-Learning/lectures/lecture1.html
-          output: web
-        - title: Lecture 2 - Supervised Learning
-          url: /Machine-Learning/lectures/lecture2.html
-          output: web
-    - title: Topics
-      output: web
-      folderitems:
-        - title: Linear Regression
-          url: /Machine-Learning/topics/linear_regression.html
-          output: web
-        - title: Logistic Regression
-          url: /Machine-Learning/topics/logistic_regression.html
-          output: web
-        - title: Gradient Descent
-          url: /Machine-Learning/topics/gradient_descent.html
-          output: web
-        - title: Cost Functions
-          url: /Machine-Learning/topics/cost_functions.html
-          output: web
-    - title: Projects
-      output: web
-      folderitems:
-        - title: Projects Overview
-          url: /Machine-Learning/projects/
-          output: web
-        - title: Linear Regression
-          url: /Machine-Learning/projects/1-linear-regression.html
-          output: web
-        - title: Multiple Linear Regression
-          url: /Machine-Learning/projects/2-multiple-linear-regression.html
-          output: web
-        - title: Gradient Descent
-          url: /Machine-Learning/projects/gradient-descent.html
-          output: web
-        - title: Logistic Regression
-          url: /Machine-Learning/projects/logistic-regression.html
-          output: web
-        - title: Decision Trees
-          url: /Machine-Learning/projects/decision-trees.html
-          output: web
-    - title: References
-      output: web
-      folderitems:
-        - title: Books & Papers
-          url: /Machine-Learning/references/books.html
-          output: web
+  - title: CS229 Machine Learning Notes
+    product: CS229
+    folders:
+      - title: Introduction
+        output: web
+        folderitems:
+          - title: Syllabus
+            url: /Machine-Learning/intro/syllabus.html
+            output: web
+      - title: Lecture Notes
+        output: web
+        folderitems:
+          - title: Lecture 1 - Introduction
+            url: /Machine-Learning/lectures/lecture1.html
+            output: web
+          - title: Lecture 2 - Supervised Learning
+            url: /Machine-Learning/lectures/lecture2.html
+            output: web
+      - title: Topics
+        output: web
+        folderitems:
+          - title: Linear Regression
+            url: /Machine-Learning/topics/linear_regression.html
+            output: web
+          - title: Logistic Regression
+            url: /Machine-Learning/topics/logistic_regression.html
+            output: web
+          - title: Gradient Descent
+            url: /Machine-Learning/topics/gradient_descent.html
+            output: web
+          - title: Cost Functions
+            url: /Machine-Learning/topics/cost_functions.html
+            output: web
+      - title: Projects
+        output: web
+        folderitems:
+          - title: Projects Overview
+            url: /Machine-Learning/projects/
+            output: web
+          - title: Linear Regression
+            url: /Machine-Learning/projects/1-linear-regression.html
+            output: web
+          - title: Multiple Linear Regression
+            url: /Machine-Learning/projects/2-multiple-linear-regression.html
+            output: web
+          - title: Gradient Descent
+            url: /Machine-Learning/projects/gradient-descent.html
+            output: web
+          - title: Logistic Regression
+            url: /Machine-Learning/projects/logistic-regression.html
+            output: web
+          - title: Decision Trees
+            url: /Machine-Learning/projects/decision-trees.html
+            output: web
+      - title: References
+        output: web
+        folderitems:
+          - title: Books & Papers
+            url: /Machine-Learning/references/books.html
+            output: web

@@ -27,5 +27,5 @@ This project builds decision tree classifiers and regressors, exploring splittin
 
 ## Related Topics
 
-- [Cost Functions](/topics/cost_functions.html)
+- [Cost Functions](/Machine-Learning/topics/cost_functions.html)
 - Ensemble methods (planned)

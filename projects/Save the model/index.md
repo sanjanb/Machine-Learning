@@ -21,5 +21,5 @@ This project demonstrates persisting trained models to disk and loading them for
 
 ## Related Topics
 
-- [Linear Regression](/topics/linear_regression.html)
-- [Logistic Regression](/topics/logistic_regression.html)
+- [Linear Regression](/Machine-Learning/topics/linear_regression.html)
+- [Logistic Regression](/Machine-Learning/topics/logistic_regression.html)

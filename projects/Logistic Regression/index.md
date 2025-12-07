@@ -26,6 +26,6 @@ This project applies logistic regression for binary and multiclass classificatio
 
 ## Related Topics
 
-- [Logistic Regression](/topics/logistic_regression.html)
-- [Gradient Descent](/topics/gradient_descent.html)
-- [Cost Functions](/topics/cost_functions.html)
+- [Logistic Regression](/Machine-Learning/topics/logistic_regression.html)
+- [Gradient Descent](/Machine-Learning/topics/gradient_descent.html)
+- [Cost Functions](/Machine-Learning/topics/cost_functions.html)

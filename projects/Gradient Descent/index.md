@@ -25,5 +25,5 @@ This project demonstrates gradient descent and its variants (batch, stochastic, 
 
 ## Related Topics
 
-- [Gradient Descent Theory](/topics/gradient_descent.html)
-- [Cost Functions](/topics/cost_functions.html)
+- [Gradient Descent Theory](/Machine-Learning/topics/gradient_descent.html)
+- [Cost Functions](/Machine-Learning/topics/cost_functions.html)

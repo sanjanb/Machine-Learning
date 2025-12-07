@@ -21,4 +21,4 @@ This project demonstrates splitting datasets into train/test sets (and validatio
 
 ## Related Topics
 
-- [Cost Functions](/topics/cost_functions.html)
+- [Cost Functions](/Machine-Learning/topics/cost_functions.html)

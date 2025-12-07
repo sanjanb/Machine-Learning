@@ -12,7 +12,7 @@ This project implements multiple linear regression using features like area, bed
 
 ## Files
 
-- Data: [homeprices.csv](/Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/homeprices%20(1).csv)
+- Data: [homeprices.csv](</Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/homeprices%20(1).csv>)
 - Data: [hiring.csv](/Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/hiring.csv)
 - Notebook: [View rendered notebook](/Machine-Learning/projects/2-multiple-linear-regression/notebook)
 

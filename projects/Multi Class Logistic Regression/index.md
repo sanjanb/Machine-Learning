@@ -21,4 +21,4 @@ This project implements multiclass classification using softmax regression and o
 
 ## Related Topics
 
-- [Logistic Regression](/topics/logistic_regression.html)
+- [Logistic Regression](/Machine-Learning/topics/logistic_regression.html)
