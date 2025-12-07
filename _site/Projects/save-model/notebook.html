@@ -179,7 +179,7 @@
     <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
         <span class="nf">print</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">dirname</span><span class="p">,</span> <span class="n">filename</span><span class="p">))</span>
 
-<span class="c1"># You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save &amp; Run All" 
+<span class="c1"># You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save &amp; Run All"
 # You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
 </span></code></pre></div></div>
 
@@ -208,6 +208,7 @@
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -307,6 +308,7 @@ array([859554.79452055])
 </code></pre></div></div>
 
 <h2 id="save-the-model-using-sklearns-joblib">SAVE THE MODEL USING SKLEARN’S JOBLIB</h2>
+
 <p>if the model consist of large numpy array, this is the go to option</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># from sklearn.externals import joblib
@@ -329,7 +331,6 @@ array([859554.79452055])
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([135.78767123])
 </code></pre></div></div>
-
 </main>
     </div>
   </body>

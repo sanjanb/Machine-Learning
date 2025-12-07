@@ -23,14 +23,12 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
 
-# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
+# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All"
 # You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
 ```
 
     /kaggle/input/carprices/carprices.csv
     /kaggle/input/encoding/homeprices (2).csv
-    
-
 
 ```python
 import pandas as pd
@@ -38,14 +36,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-
 ```python
 df = pd.read_csv("/kaggle/input/encoding/homeprices (2).csv")
 df.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -60,6 +54,7 @@ df.head()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -105,27 +100,15 @@ df.head()
 </table>
 </div>
 
-
-
-
 ```python
 df.shape
 ```
 
-
-
-
     (13, 3)
-
-
-
 
 ```python
 df.town.value_counts()
 ```
-
-
-
 
     town
     monroe township    5
@@ -133,18 +116,12 @@ df.town.value_counts()
     robinsville        4
     Name: count, dtype: int64
 
-
-
 ## GET DUMMIES METHOD FROM PANDAS
-
 
 ```python
 dummies = pd.get_dummies(df.town).astype(int)
 dummies.head(10)
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -159,6 +136,7 @@ dummies.head(10)
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -234,16 +212,10 @@ dummies.head(10)
 </table>
 </div>
 
-
-
-
 ```python
 merged = pd.concat([ df, dummies], axis = 'columns')
 merged.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -258,6 +230,7 @@ merged.head()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -320,9 +293,6 @@ merged.head()
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 # Lets drop town column
@@ -331,9 +301,6 @@ final = merged.drop(['town', 'west windsor'], axis = 1)
 final
 ```
 
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -347,6 +314,7 @@ final
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -454,29 +422,16 @@ final
 </table>
 </div>
 
-
-
-
 ```python
 plt.plot(final)
 ```
-
-
-
 
     [<matplotlib.lines.Line2D at 0x7d972e82fb10>,
      <matplotlib.lines.Line2D at 0x7d972e6dae90>,
      <matplotlib.lines.Line2D at 0x7d972e6db190>,
      <matplotlib.lines.Line2D at 0x7d972e6db510>]
 
-
-
-
-    
 ![png](notebook_files/notebook_9_1.png)
-    
-
-
 
 ```python
 from sklearn import linear_model
@@ -484,56 +439,31 @@ from sklearn import linear_model
 model = linear_model.LinearRegression()
 ```
 
-
 ```python
 X = final.drop(columns = ['price'])
 y = final['price']
 X.shape, y.shape
 ```
 
-
-
-
     ((13, 3), (13,))
-
-
-
 
 ```python
 model.fit(X, y)
 ```
 
-
-
-
 <style>#sk-container-id-14 {color: black;background-color: white;}#sk-container-id-14 pre{padding: 0;}#sk-container-id-14 div.sk-toggleable {background-color: white;}#sk-container-id-14 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-14 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-14 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-14 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-14 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-14 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-14 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-14 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-14 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-14 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-14 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-14 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-14 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-14 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-14 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-14 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-14 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-14 div.sk-item {position: relative;z-index: 1;}#sk-container-id-14 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-14 div.sk-item::before, #sk-container-id-14 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-14 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-14 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-14 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-14 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-14 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-14 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-14 div.sk-label-container {text-align: center;}#sk-container-id-14 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-14 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-14" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" checked><label for="sk-estimator-id-14" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
-
-
-
 
 ```python
 model.coef_
 ```
 
-
-
-
     array([   126.89744141, -40013.97548914, -14327.56396474])
-
-
-
 
 ```python
 model.intercept_
 ```
 
-
-
-
     249790.36766292527
-
-
-
 
 ```python
 import pickle
@@ -542,24 +472,16 @@ with open('model_pickle', 'wb') as f:
     pickle.dump(model, f)
 ```
 
-
 ```python
 with open('model_pickle', 'rb') as f:
     reg = pickle.load(f)
 ```
 
-
 ```python
 reg.coef_
 ```
 
-
-
-
     array([   126.89744141, -40013.97548914, -14327.56396474])
-
-
-
 
 ```python
 reg.predict([[2800, 0, 1]])
@@ -567,15 +489,12 @@ reg.predict([[2800, 0, 1]])
 
     /usr/local/lib/python3.11/dist-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
       warnings.warn(
-    
+
 
 
 
 
     array([590775.63964739])
-
-
-
 
 ```python
 # to calculate the model
@@ -583,15 +502,9 @@ reg.predict([[2800, 0, 1]])
 reg.score(X, y) * 100
 ```
 
-
-
-
     95.73929037221873
 
-
-
 ## ONE HOT ENCODING METHOD FROM SKLEARN
-
 
 ```python
 from sklearn.preprocessing import LabelEncoder
@@ -599,14 +512,10 @@ from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 ```
 
-
 ```python
 df_le = df
 df_le
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -621,6 +530,7 @@ df_le
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -714,16 +624,10 @@ df_le
 </table>
 </div>
 
-
-
-
 ```python
 df_le.town = le.fit_transform(df_le.town)
 df_le.town
 ```
-
-
-
 
     0     0
     1     0
@@ -740,15 +644,9 @@ df_le.town
     12    1
     Name: town, dtype: int64
 
-
-
-
 ```python
 df_le
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -763,6 +661,7 @@ df_le
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -856,9 +755,6 @@ df_le
 </table>
 </div>
 
-
-
-
 ```python
 X = df_le.drop(columns = ['price'])
 y = df_le['price']
@@ -866,61 +762,31 @@ y = df_le['price']
 X.shape, y.shape
 ```
 
-
-
-
     ((13, 2), (13,))
-
-
-
 
 ```python
 reg.coef_
 ```
 
-
-
-
     array([   126.89744141, -40013.97548914, -14327.56396474])
-
-
-
 
 ```python
 model.coef_
 ```
 
-
-
-
     array([   126.89744141, -40013.97548914, -14327.56396474])
-
-
-
 
 ```python
 model.fit(X, y)
 ```
 
-
-
-
 <style>#sk-container-id-15 {color: black;background-color: white;}#sk-container-id-15 pre{padding: 0;}#sk-container-id-15 div.sk-toggleable {background-color: white;}#sk-container-id-15 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-15 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-15 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-15 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-15 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-15 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-15 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-15 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-15 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-15 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-15 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-15 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-15 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-15 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-15 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-15 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-15 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-15 div.sk-item {position: relative;z-index: 1;}#sk-container-id-15 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-15 div.sk-item::before, #sk-container-id-15 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-15 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-15 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-15 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-15 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-15 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-15 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-15 div.sk-label-container {text-align: center;}#sk-container-id-15 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-15 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-15" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" checked><label for="sk-estimator-id-15" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
-
-
-
 
 ```python
 model.coef_
 ```
 
-
-
-
     array([20112.74367181,   126.05469887])
-
-
-
 
 ```python
 model.predict([[2, 3300]])
@@ -928,23 +794,17 @@ model.predict([[2, 3300]])
 
     /usr/local/lib/python3.11/dist-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
       warnings.warn(
-    
+
 
 
 
 
     array([670283.67762584])
 
-
-
-
 ```python
 X = df_le[['town', 'area']].values
 X
 ```
-
-
-
 
     array([[   0, 2600],
            [   0, 3000],
@@ -960,13 +820,9 @@ X
            [   1, 3100],
            [   1, 3600]])
 
-
-
-
 ```python
 y = df_le.price
 ```
-
 
 ```python
 from sklearn.preprocessing import OneHotEncoder
@@ -974,14 +830,10 @@ from sklearn.preprocessing import OneHotEncoder
 ohe = OneHotEncoder()
 ```
 
-
 ```python
 X = ohe.fit_transform(X[:, 0:1]).toarray()
 X
 ```
-
-
-
 
     array([[1., 0., 0.],
            [1., 0., 0.],
@@ -997,16 +849,10 @@ X
            [0., 1., 0.],
            [0., 1., 0.]])
 
-
-
-
 ```python
 X = X[:, 1:]
 X
 ```
-
-
-
 
     array([[0., 0.],
            [0., 0.],
@@ -1022,42 +868,24 @@ X
            [1., 0.],
            [1., 0.]])
 
-
-
-
 ```python
 model.fit(X, y)
 ```
 
-
-
-
 <style>#sk-container-id-16 {color: black;background-color: white;}#sk-container-id-16 pre{padding: 0;}#sk-container-id-16 div.sk-toggleable {background-color: white;}#sk-container-id-16 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-16 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-16 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-16 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-16 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-16 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-16 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-16 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-16 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-16 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-16 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-16 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-16 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-16 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-16 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-16 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-16 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-16 div.sk-item {position: relative;z-index: 1;}#sk-container-id-16 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-16 div.sk-item::before, #sk-container-id-16 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-16 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-16 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-16 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-16 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-16 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-16 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-16 div.sk-label-container {text-align: center;}#sk-container-id-16 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-16 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-16" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" checked><label for="sk-estimator-id-16" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
-
-
-
 
 ```python
 model.coef_
 ```
 
-
-
-
     array([-3500., 14000.])
 
-
-
 ## EXERCISE
-
 
 ```python
 df = pd.read_csv("/kaggle/input/carprices/carprices.csv")
 df.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1072,6 +900,7 @@ df.head()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -1123,15 +952,9 @@ df.head()
 </table>
 </div>
 
-
-
-
 ```python
 df['Car Model'].value_counts()
 ```
-
-
-
 
     Car Model
     BMW X5                   5
@@ -1139,18 +962,12 @@ df['Car Model'].value_counts()
     Mercedez Benz C class    4
     Name: count, dtype: int64
 
-
-
 ## GET DUMMIES FUNCTION
-
 
 ```python
 dummies = pd.get_dummies(df['Car Model']).astype(int)
 dummies
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1165,6 +982,7 @@ dummies
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -1258,18 +1076,12 @@ dummies
 </table>
 </div>
 
-
-
-
 ```python
 df = df.drop(columns = ['Car Model'])
 
 final = pd.concat([df, dummies], axis = 1)
 final.head(4)
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1284,6 +1096,7 @@ final.head(4)
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -1338,9 +1151,6 @@ final.head(4)
 </table>
 </div>
 
-
-
-
 ```python
 X = final.drop(columns = ['Sell Price($)'])
 y = final['Sell Price($)']
@@ -1348,20 +1158,11 @@ y = final['Sell Price($)']
 X.shape, y.shape
 ```
 
-
-
-
     ((13, 5), (13,))
-
-
-
 
 ```python
 y
 ```
-
-
-
 
     0     18000
     1     34000
@@ -1378,15 +1179,9 @@ y
     12    33000
     Name: Sell Price($), dtype: int64
 
-
-
-
 ```python
 X
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1401,6 +1196,7 @@ X
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -1522,9 +1318,6 @@ X
 </table>
 </div>
 
-
-
-
 ```python
 from sklearn.linear_model import LinearRegression
 
@@ -1532,27 +1325,15 @@ model = LinearRegression()
 model.fit(X, y)
 ```
 
-
-
-
 <style>#sk-container-id-17 {color: black;background-color: white;}#sk-container-id-17 pre{padding: 0;}#sk-container-id-17 div.sk-toggleable {background-color: white;}#sk-container-id-17 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-17 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-17 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-17 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-17 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-17 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-17 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-17 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-17 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-17 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-17 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-17 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-17 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-17 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-17 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-17 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-17 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-17 div.sk-item {position: relative;z-index: 1;}#sk-container-id-17 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-17 div.sk-item::before, #sk-container-id-17 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-17 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-17 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-17 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-17 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-17 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-17 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-17 div.sk-label-container {text-align: center;}#sk-container-id-17 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-17 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-17" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-17" type="checkbox" checked><label for="sk-estimator-id-17" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
-
-
-
 
 ```python
 model.coef_, model.intercept_
 ```
 
-
-
-
     (array([-3.70122094e-01, -1.33245363e+03,  6.10375284e+02, -3.67429130e+03,
              3.06391602e+03]),
      55912.70994756205)
-
-
-
 
 ```python
 model.predict([[6900, 6, 0,1 ,0]])
@@ -1560,15 +1341,12 @@ model.predict([[6900, 6, 0,1 ,0]])
 
     /usr/local/lib/python3.11/dist-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
       warnings.warn(
-    
+
 
 
 
 
     array([41689.85442592])
-
-
-
 
 ```python
 model.predict([[7900, 7, 0, 0 ,1]])
@@ -1576,27 +1354,18 @@ model.predict([[7900, 7, 0, 0 ,1]])
 
     /usr/local/lib/python3.11/dist-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
       warnings.warn(
-    
+
 
 
 
 
     array([46725.48602958])
 
-
-
-
 ```python
 model.score(X, y)
 ```
 
-
-
-
     0.9417050937281082
-
-
-
 
 ```python
 import pickle
@@ -1605,7 +1374,6 @@ with open('model_name_for_pickle', 'wb') as f:
     pickle.dump(model, f)
 ```
 
-
 ```python
 with open('model_name_for_pickle', 'rb') as f:
     reg = pickle.load(f)
@@ -1613,21 +1381,16 @@ with open('model_name_for_pickle', 'rb') as f:
 
 ## ONE-HOT ENCODING
 
-
 ```python
 from sklearn.preprocessing import LabelEncoder
 
 le = LabelEncoder()
 ```
 
-
 ```python
 df = pd.read_csv("/kaggle/input/carprices/carprices.csv")
 df.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1642,6 +1405,7 @@ df.head()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -1693,17 +1457,11 @@ df.head()
 </table>
 </div>
 
-
-
-
 ```python
 df['Car Model'] = le.fit_transform(df['Car Model'])
 
 df['Car Model']
 ```
-
-
-
 
     0     1
     1     1
@@ -1720,15 +1478,9 @@ df['Car Model']
     12    2
     Name: Car Model, dtype: int64
 
-
-
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1743,6 +1495,7 @@ df
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -1850,16 +1603,10 @@ df
 </table>
 </div>
 
-
-
-
 ```python
 X = df[['Car Model','Mileage', 'Age(yrs)']].values
 X
 ```
-
-
-
 
     array([[    1, 69000,     6],
            [    1, 35000,     3],
@@ -1875,16 +1622,10 @@ X
            [    2, 79000,     7],
            [    2, 59000,     5]])
 
-
-
-
 ```python
 y = df['Sell Price($)']
 y
 ```
-
-
-
 
     0     18000
     1     34000
@@ -1901,9 +1642,6 @@ y
     12    33000
     Name: Sell Price($), dtype: int64
 
-
-
-
 ```python
 from sklearn.preprocessing import OneHotEncoder
 
@@ -1912,47 +1650,24 @@ X = ohe.fit_transform(X)
 X
 ```
 
-
-
-
     <Compressed Sparse Row sparse matrix of dtype 'float64'
     	with 39 stored elements and shape (13, 22)>
-
-
-
 
 ```python
 model.coef_
 ```
 
-
-
-
     array([-3.70122094e-01, -1.33245363e+03,  6.10375284e+02, -3.67429130e+03,
             3.06391602e+03])
-
-
-
 
 ```python
 model.fit(X, y)
 ```
 
-
-
-
 <style>#sk-container-id-18 {color: black;background-color: white;}#sk-container-id-18 pre{padding: 0;}#sk-container-id-18 div.sk-toggleable {background-color: white;}#sk-container-id-18 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-18 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-18 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-18 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-18 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-18 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-18 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-18 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-18 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-18 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-18 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-18 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-18 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-18 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-18 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-18 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-18 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-18 div.sk-item {position: relative;z-index: 1;}#sk-container-id-18 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-18 div.sk-item::before, #sk-container-id-18 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-18 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-18 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-18 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-18 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-18 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-18 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-18 div.sk-label-container {text-align: center;}#sk-container-id-18 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-18 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-18" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-18" type="checkbox" checked><label for="sk-estimator-id-18" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
-
-
-
 
 ```python
 model.score(X, y)
 ```
 
-
-
-
     1.0
-
-

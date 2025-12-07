@@ -23,13 +23,11 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
 
-# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
+# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All"
 # You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
 ```
 
     /kaggle/input/prices/homeprices (1).csv
-    
-
 
 ```python
 import pandas as pd
@@ -38,19 +36,12 @@ import matplotlib.pyplot as plt
 from sklearn import linear_model
 ```
 
-
 ```python
 df = pd.read_csv("/kaggle/input/prices/homeprices (1).csv")
 df.shape
 ```
 
-
-
-
     (6, 4)
-
-
-
 
 ```python
 df.head()
@@ -62,10 +53,6 @@ df.head()
       has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
     /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in greater
       has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
-    
-
-
-
 
 <div>
 <style scoped>
@@ -80,6 +67,7 @@ df.head()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -131,9 +119,6 @@ df.head()
 </table>
 </div>
 
-
-
-
 ```python
 import math
 
@@ -141,21 +126,12 @@ median = math.floor(df.bedrooms.median())
 median
 ```
 
-
-
-
     4
-
-
-
 
 ```python
 df.bedrooms = df.bedrooms.fillna(median)
 df.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -170,6 +146,7 @@ df.head()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -221,20 +198,11 @@ df.head()
 </table>
 </div>
 
-
-
-
 ```python
 df.columns
 ```
 
-
-
-
     Index(['area', 'bedrooms', 'age', 'price'], dtype='object')
-
-
-
 
 ```python
 X  = df.drop(columns = ['price'])
@@ -243,13 +211,7 @@ y = df['price']
 X.shape, y.shape
 ```
 
-
-
-
     ((6, 3), (6,))
-
-
-
 
 ```python
 reg = linear_model.LinearRegression()
@@ -257,13 +219,7 @@ reg = linear_model.LinearRegression()
 reg.fit(X, y)
 ```
 
-
-
-
 <style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
-
-
-
 
 ```python
 reg.coef_
@@ -271,30 +227,18 @@ reg.coef_
 # Coefficients for all the features
 ```
 
-
-
-
     array([  112.06244194, 23388.88007794, -3231.71790863])
-
-
-
 
 ```python
 reg.intercept_
 ```
 
-
-
-
     221323.00186540396
-
-
 
 ## EXERCISE
 
-
 ```python
-! pip install word2number 
+! pip install word2number
 ```
 
     Collecting word2number
@@ -307,21 +251,15 @@ reg.intercept_
     Successfully built word2number
     Installing collected packages: word2number
     Successfully installed word2number-1.1
-    
-
 
 ```python
 from word2number import w2n
 ```
 
-
 ```python
 df = pd.read_csv("/kaggle/input/hiring/hiring.csv")
 df.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -336,6 +274,7 @@ df.head()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -387,36 +326,21 @@ df.head()
 </table>
 </div>
 
-
-
-
 ```python
 df.shape
 ```
 
-
-
-
     (8, 4)
-
-
-
 
 ```python
 df.isna().sum()
 ```
-
-
-
 
     experience                    2
     test_score(out of 10)         1
     interview_score(out of 10)    0
     salary($)                     0
     dtype: int64
-
-
-
 
 ```python
 df['test_score(out of 10)']
@@ -428,7 +352,7 @@ df['test_score(out of 10)']
       has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
     /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in greater
       has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
-    
+
 
 
 
@@ -443,9 +367,6 @@ df['test_score(out of 10)']
     7     7.0
     Name: test_score(out of 10), dtype: float64
 
-
-
-
 ```python
 median = math.floor(df['test_score(out of 10)'].median())
 median
@@ -453,9 +374,6 @@ median
 df['test_score(out of 10)'] = df['test_score(out of 10)'].fillna(median)
 df['test_score(out of 10)']
 ```
-
-
-
 
     0     8.0
     1     8.0
@@ -467,15 +385,9 @@ df['test_score(out of 10)']
     7     7.0
     Name: test_score(out of 10), dtype: float64
 
-
-
-
 ```python
 df['experience']
 ```
-
-
-
 
     0       NaN
     1       NaN
@@ -486,9 +398,6 @@ df['experience']
     6       ten
     7    eleven
     Name: experience, dtype: object
-
-
-
 
 ```python
 def convert_experience(value):
@@ -512,7 +421,7 @@ print(df)
     5         3.0                    7.0                          10      62000
     6        10.0                    8.0                           7      72000
     7        11.0                    7.0                           8      80000
-    
+
 
     /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: invalid value encountered in greater
       has_large_values = (abs_vals > 1e6).any()
@@ -520,8 +429,6 @@ print(df)
       has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
     /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in greater
       has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
-    
-
 
 ```python
 median = math.floor(df['experience'].median())
@@ -530,9 +437,6 @@ median
 df['experience'] = df['experience'].fillna(median)
 df['experience']
 ```
-
-
-
 
     0     6.0
     1     6.0
@@ -544,9 +448,6 @@ df['experience']
     7    11.0
     Name: experience, dtype: float64
 
-
-
-
 ```python
 X = df.drop(columns = ['salary($)'])
 y = df['salary($)']
@@ -554,13 +455,7 @@ y = df['salary($)']
 X.shape, y.shape
 ```
 
-
-
-
     ((8, 3), (8,))
-
-
-
 
 ```python
 reg = linear_model.LinearRegression()
@@ -568,37 +463,19 @@ reg = linear_model.LinearRegression()
 reg.fit(X, y)
 ```
 
-
-
-
 <style>#sk-container-id-3 {color: black;background-color: white;}#sk-container-id-3 pre{padding: 0;}#sk-container-id-3 div.sk-toggleable {background-color: white;}#sk-container-id-3 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-3 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-3 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-3 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-3 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-3 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-3 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-3 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-3 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-3 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-3 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-3 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-3 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-3 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-3 div.sk-item {position: relative;z-index: 1;}#sk-container-id-3 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-3 div.sk-item::before, #sk-container-id-3 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-3 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-3 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-3 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-3 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-3 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-3 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-3 div.sk-label-container {text-align: center;}#sk-container-id-3 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-3 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" checked><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
-
-
-
 
 ```python
 reg.coef_
 ```
 
-
-
-
     array([2813.00813008, 1333.33333333, 2926.82926829])
-
-
-
 
 ```python
 reg.intercept_
 ```
 
-
-
-
     11869.91869918695
-
-
-
 
 ```python
 reg.predict([[2, 9, 6]])
@@ -606,15 +483,12 @@ reg.predict([[2, 9, 6]])
 
     /usr/local/lib/python3.11/dist-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
       warnings.warn(
-    
+
 
 
 
 
     array([47056.91056911])
-
-
-
 
 ```python
 reg.predict([[12,10, 10]])
@@ -622,11 +496,9 @@ reg.predict([[12,10, 10]])
 
     /usr/local/lib/python3.11/dist-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
       warnings.warn(
-    
+
 
 
 
 
     array([88227.64227642])
-
-

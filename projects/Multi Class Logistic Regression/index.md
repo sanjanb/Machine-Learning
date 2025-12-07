@@ -17,7 +17,7 @@ This project implements multiclass classification using softmax regression and o
 
 ## Notebook
 
-- [Rendered notebook](../8.%20Multi%20Class%20Logistic%20Regression/notebook)
+- [Rendered notebook](/Machine-Learning/projects/multiclass-logistic-regression/notebook)
 
 ## Related Topics
 

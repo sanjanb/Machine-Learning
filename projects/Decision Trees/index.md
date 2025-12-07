@@ -17,13 +17,13 @@ This project builds decision tree classifiers and regressors, exploring splittin
 
 ## Notebooks
 
-- [Decision Trees Main](../9.%20Decision%20Trees/notebook)
-- [Decision Trees Exercise](../9.%20Decision%20Trees/Exercise/notebook)
+- [Decision Trees Main](/Machine-Learning/projects/decision-trees/notebook)
+- [Decision Trees Exercise](/Machine-Learning/projects/decision-trees/exercise/notebook)
 
 ## Datasets
 
-- [salaries.csv](../9.%20Decision%20Trees/salaries.csv)
-- [titanic.csv](../9.%20Decision%20Trees/Exercise/titanic.csv)
+- [salaries.csv](/Machine-Learning/projects/9.%20Decision%20Trees/salaries.csv)
+- [titanic.csv](/Machine-Learning/projects/9.%20Decision%20Trees/Exercise/titanic.csv)
 
 ## Related Topics
 

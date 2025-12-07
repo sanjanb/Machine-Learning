@@ -17,12 +17,12 @@ This project applies logistic regression for binary and multiclass classificatio
 
 ## Notebook
 
-- [Rendered notebook](../7.%20Logistic%20Regression/notebook)
+- [Rendered notebook](/Machine-Learning/projects/logistic-regression/notebook)
 
 ## Datasets
 
-- [insurance_data.csv](../7.%20Logistic%20Regression/insurance_data.csv)
-- [HR_comma_sep.csv](../7.%20Logistic%20Regression/HR_comma_sep.csv)
+- [insurance_data.csv](/Machine-Learning/projects/7.%20Logistic%20Regression/insurance_data.csv)
+- [HR_comma_sep.csv](/Machine-Learning/projects/7.%20Logistic%20Regression/HR_comma_sep.csv)
 
 ## Related Topics
 

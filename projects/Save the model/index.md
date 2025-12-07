@@ -17,7 +17,7 @@ This project demonstrates persisting trained models to disk and loading them for
 
 ## Notebook
 
-- [Rendered notebook](../4.%20Save%20the%20model/notebook)
+- [Rendered notebook](/Machine-Learning/projects/save-model/notebook)
 
 ## Related Topics
 

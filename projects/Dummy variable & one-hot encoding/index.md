@@ -17,12 +17,12 @@ This project covers handling categorical data using dummy variables and one-hot 
 
 ## Notebook
 
-- [Rendered notebook](../5.%20Dummy%20variable%20%26%20one-hot%20encoding/notebook)
+- [Rendered notebook](/Machine-Learning/projects/encoding/notebook)
 
 ## Datasets
 
-- [homeprices.csv](<../5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv>)
-- [carprices.csv](../5.%20Dummy%20variable%20%26%20one-hot%20encoding/carprices.csv)
+- [homeprices.csv](/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv)
+- [carprices.csv](/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/carprices.csv)
 
 ## Related Topics
 
