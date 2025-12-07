@@ -17,7 +17,12 @@ This project applies logistic regression for binary and multiclass classificatio
 
 ## Notebook
 
-- Rendered notebook: Will appear here once the `.ipynb` is added (the watcher auto-converts to `notebook.md`).
+- [Rendered notebook](../7.%20Logistic%20Regression/notebook)
+
+## Datasets
+
+- [insurance_data.csv](../7.%20Logistic%20Regression/insurance_data.csv)
+- [HR_comma_sep.csv](../7.%20Logistic%20Regression/HR_comma_sep.csv)
 
 ## Related Topics
 

@@ -15,9 +15,15 @@ This project builds decision tree classifiers and regressors, exploring splittin
 - Concepts: Gini, entropy, information gain, pruning, max depth
 - Pipeline: Preprocessing → Training → Feature importance → Evaluation
 
-## Notebook
+## Notebooks
 
-- Rendered notebook: Will appear here once the `.ipynb` is added.
+- [Decision Trees Main](../9.%20Decision%20Trees/notebook)
+- [Decision Trees Exercise](../9.%20Decision%20Trees/Exercise/notebook)
+
+## Datasets
+
+- [salaries.csv](../9.%20Decision%20Trees/salaries.csv)
+- [titanic.csv](../9.%20Decision%20Trees/Exercise/titanic.csv)
 
 ## Related Topics
 

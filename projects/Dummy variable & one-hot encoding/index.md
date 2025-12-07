@@ -17,7 +17,12 @@ This project covers handling categorical data using dummy variables and one-hot 
 
 ## Notebook
 
-- Rendered notebook: Will appear here once the `.ipynb` is added.
+- [Rendered notebook](../5.%20Dummy%20variable%20%26%20one-hot%20encoding/notebook)
+
+## Datasets
+
+- [homeprices.csv](../5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv)
+- [carprices.csv](../5.%20Dummy%20variable%20%26%20one-hot%20encoding/carprices.csv)
 
 ## Related Topics
 

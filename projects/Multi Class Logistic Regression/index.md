@@ -17,7 +17,7 @@ This project implements multiclass classification using softmax regression and o
 
 ## Notebook
 
-- Rendered notebook: Will appear here once the `.ipynb` is added.
+- [Rendered notebook](../8.%20Multi%20Class%20Logistic%20Regression/notebook)
 
 ## Related Topics
 

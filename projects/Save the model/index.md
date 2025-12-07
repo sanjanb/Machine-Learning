@@ -17,7 +17,7 @@ This project demonstrates persisting trained models to disk and loading them for
 
 ## Notebook
 
-- Rendered notebook: Will appear here once the `.ipynb` is added.
+- [Rendered notebook](../4.%20Save%20the%20model/notebook)
 
 ## Related Topics
 

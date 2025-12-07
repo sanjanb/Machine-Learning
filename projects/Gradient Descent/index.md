@@ -17,7 +17,11 @@ This project demonstrates gradient descent and its variants (batch, stochastic, 
 
 ## Notebook
 
-- Rendered notebook: Will appear here once the `.ipynb` is added.
+- [Rendered notebook](../3.%20Gradient%20Descent/notebook)
+
+## Dataset
+
+- [test_scores.csv](../3.%20Gradient%20Descent/test_scores.csv)
 
 ## Related Topics
 
