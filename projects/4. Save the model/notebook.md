@@ -1,3 +1,12 @@
+---
+layout: default
+title: "Save & Load Models - Notebook"
+permalink: projects/save-model/notebook
+sidebar: sidebar
+---
+
+# Save & Load Models - Jupyter Notebook
+
 ```python
 # This Python 3 environment comes with many helpful analytics libraries installed
 # It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python

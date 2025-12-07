@@ -1,3 +1,12 @@
+---
+layout: default
+title: "Linear Regression - Notebook"
+permalink: projects/1-linear-regression/notebook
+sidebar: sidebar
+---
+
+# Linear Regression - Jupyter Notebook
+
 ```python
 # This Python 3 environment comes with many helpful analytics libraries installed
 # It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python

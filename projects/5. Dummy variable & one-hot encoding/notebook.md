@@ -1,3 +1,12 @@
+---
+layout: default
+title: "Dummy Variables & One-Hot Encoding - Notebook"
+permalink: projects/encoding/notebook
+sidebar: sidebar
+---
+
+# Dummy Variables & One-Hot Encoding - Jupyter Notebook
+
 ```python
 # This Python 3 environment comes with many helpful analytics libraries installed
 # It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python
