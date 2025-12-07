@@ -14,7 +14,6 @@ This section contains practical projects that implement various machine learning
 
 ### Project 1: Simple Linear Regression
 
-
 ## Current Projects
 
 <div class="cards">
@@ -72,6 +71,7 @@ This section contains practical projects that implement various machine learning
 .card h3 { margin: 0 0 0.5rem 0; }
 .card p { margin: 0.25rem 0; }
 </style>
+
 ### Project 2: Multiple Linear Regression
 
 **Status:** In Progress  
