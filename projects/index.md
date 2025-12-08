@@ -68,152 +68,153 @@ layout: default
 		</p>
 	</article>
 
-	<!-- Project 2 -->
-	<article class="card" data-category="regression" data-difficulty="beginner" data-status="complete">
-		<header>
-			<h3>Project 2: Multiple Linear Regression</h3>
-			<span class="tag">Regression</span>
-		</header>
-		<p>Predict home prices using area, bedrooms, and age.</p>
-		<p><strong>Concepts:</strong> Multiple Linear Regression, Data Cleaning, Gradient Descent</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/2-multiple-linear-regression.html">Project page</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/2-multiple-linear-regression/notebook">Notebook</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/homeprices%20(1).csv">Dataset</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/hiring.csv">Dataset</a>
-		</p>
-	</article>
+    <!-- Project 2 -->
+    <article class="card" data-category="regression" data-difficulty="beginner" data-status="complete">
+    	<header>
+    		<h3>Project 2: Multiple Linear Regression</h3>
+    		<span class="tag">Regression</span>
+    	</header>
+    	<p>Predict home prices using area, bedrooms, and age.</p>
+    	<p><strong>Concepts:</strong> Multiple Linear Regression, Data Cleaning, Gradient Descent</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/2-multiple-linear-regression.html">Project page</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/2-multiple-linear-regression/notebook">Notebook</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/homeprices%20(1).csv">Dataset</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/hiring.csv">Dataset</a>
+    	</p>
+    </article>
 
-	<!-- Project 3 -->
-	<article class="card" data-category="optimization" data-difficulty="intermediate" data-status="complete">
-		<header>
-			<h3>Project 3: Gradient Descent</h3>
-			<span class="tag">Optimization</span>
-		</header>
-		<p>Optimizing models with gradient descent variants.</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/gradient-descent.html">Project page</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/gradient-descent/notebook">Notebook</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/3.%20Gradient%20Descent/test_scores.csv">Dataset</a>
-		</p>
-	</article>
+    <!-- Project 3 -->
+    <article class="card" data-category="optimization" data-difficulty="intermediate" data-status="complete">
+    	<header>
+    		<h3>Project 3: Gradient Descent</h3>
+    		<span class="tag">Optimization</span>
+    	</header>
+    	<p>Optimizing models with gradient descent variants.</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/gradient-descent.html">Project page</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/gradient-descent/notebook">Notebook</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/3.%20Gradient%20Descent/test_scores.csv">Dataset</a>
+    	</p>
+    </article>
 
-	<!-- Project 4 -->
-	<article class="card" data-category="preprocessing" data-difficulty="beginner" data-status="complete">
-		<header>
-			<h3>Project 4: Save & Load Models</h3>
-			<span class="tag">Utility</span>
-		</header>
-		<p>Persist trained models with joblib/pickle.</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/save-model.html">Project page</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/save-model/notebook">Notebook</a>
-		</p>
-	</article>
+    <!-- Project 4 -->
+    <article class="card" data-category="preprocessing" data-difficulty="beginner" data-status="complete">
+    	<header>
+    		<h3>Project 4: Save & Load Models</h3>
+    		<span class="tag">Utility</span>
+    	</header>
+    	<p>Persist trained models with joblib/pickle.</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/save-model.html">Project page</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/save-model/notebook">Notebook</a>
+    	</p>
+    </article>
 
-	<!-- Project 5 -->
-	<article class="card" data-category="preprocessing" data-difficulty="beginner" data-status="complete">
-		<header>
-			<h3>Project 5: Dummy Variables & One-Hot</h3>
-			<span class="tag">Preprocessing</span>
-		</header>
-		<p>Encode categorical features for ML models.</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/encoding.html">Project page</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/encoding/notebook">Notebook</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv">Dataset</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/carprices.csv">Dataset</a>
-		</p>
-	</article>
+    <!-- Project 5 -->
+    <article class="card" data-category="preprocessing" data-difficulty="beginner" data-status="complete">
+    	<header>
+    		<h3>Project 5: Dummy Variables & One-Hot</h3>
+    		<span class="tag">Preprocessing</span>
+    	</header>
+    	<p>Encode categorical features for ML models.</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/encoding.html">Project page</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/encoding/notebook">Notebook</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv">Dataset</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/carprices.csv">Dataset</a>
+    	</p>
+    </article>
 
-	<!-- Project 6 -->
-	<article class="card" data-category="preprocessing" data-difficulty="beginner" data-status="planned">
-		<header>
-			<h3>Project 6: Train/Test Split</h3>
-			<span class="tag">Evaluation</span>
-		</header>
-		<p>Proper dataset splitting and evaluation.</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/train-test-split.html">Project page</a>
-			<span>·</span>
-			<span class="muted">Notebook coming soon</span>
-		</p>
-	</article>
+    <!-- Project 6 -->
+    <article class="card" data-category="preprocessing" data-difficulty="beginner" data-status="planned">
+    	<header>
+    		<h3>Project 6: Train/Test Split</h3>
+    		<span class="tag">Evaluation</span>
+    	</header>
+    	<p>Proper dataset splitting and evaluation.</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/train-test-split.html">Project page</a>
+    		<span>·</span>
+    		<span class="muted">Notebook coming soon</span>
+    	</p>
+    </article>
 
-	<!-- Project 7 -->
-	<article class="card" data-category="classification" data-difficulty="beginner" data-status="complete">
-		<header>
-			<h3>Project 7: Logistic Regression</h3>
-			<span class="tag">Classification</span>
-		</header>
-		<p>Binary classification with logistic regression.</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/logistic-regression.html">Project page</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/logistic-regression/notebook">Notebook</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/7.%20Logistic%20Regression/insurance_data.csv">Dataset</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/7.%20Logistic%20Regression/HR_comma_sep.csv">Dataset</a>
-		</p>
-	</article>
+    <!-- Project 7 -->
+    <article class="card" data-category="classification" data-difficulty="beginner" data-status="complete">
+    	<header>
+    		<h3>Project 7: Logistic Regression</h3>
+    		<span class="tag">Classification</span>
+    	</header>
+    	<p>Binary classification with logistic regression.</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/logistic-regression.html">Project page</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/logistic-regression/notebook">Notebook</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/7.%20Logistic%20Regression/insurance_data.csv">Dataset</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/7.%20Logistic%20Regression/HR_comma_sep.csv">Dataset</a>
+    	</p>
+    </article>
 
-	<!-- Project 8 -->
-	<article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
-		<header>
-			<h3>Project 8: Multiclass Logistic Regression</h3>
-			<span class="tag">Classification</span>
-		</header>
-		<p>Softmax regression and OvR strategies.</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/multiclass-logistic-regression.html">Project page</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/multiclass-logistic-regression/notebook">Notebook</a>
-		</p>
-	</article>
+    <!-- Project 8 -->
+    <article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
+    	<header>
+    		<h3>Project 8: Multiclass Logistic Regression</h3>
+    		<span class="tag">Classification</span>
+    	</header>
+    	<p>Softmax regression and OvR strategies.</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/multiclass-logistic-regression.html">Project page</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/multiclass-logistic-regression/notebook">Notebook</a>
+    	</p>
+    </article>
 
-	<!-- Project 9 -->
-	<article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
-		<header>
-			<h3>Project 9: Decision Trees</h3>
-			<span class="tag">Classification</span>
-		</header>
-		<p>Tree-based models for classification/regression.</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/decision-trees.html">Project page</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/decision-trees/notebook">Main notebook</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/decision-trees/exercise/notebook">Exercise</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/9.%20Decision%20Trees/salaries.csv">Dataset</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/9.%20Decision%20Trees/Exercise/titanic.csv">Dataset</a>
-		</p>
-	</article>
+    <!-- Project 9 -->
+    <article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
+    	<header>
+    		<h3>Project 9: Decision Trees</h3>
+    		<span class="tag">Classification</span>
+    	</header>
+    	<p>Tree-based models for classification/regression.</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/decision-trees.html">Project page</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/decision-trees/notebook">Main notebook</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/decision-trees/exercise/notebook">Exercise</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/9.%20Decision%20Trees/salaries.csv">Dataset</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/9.%20Decision%20Trees/Exercise/titanic.csv">Dataset</a>
+    	</p>
+    </article>
 
-	<!-- Project 10 -->
-	<article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
-		<header>
-			<h3>Project 10: Support Vector Machine</h3>
-			<span class="tag">Classification</span>
-		</header>
-		<p>Classification with optimal hyperplanes and kernel tricks.</p>
-		<p class="links">
-			<a class="nav-link" href="/Machine-Learning/projects/support-vector-machine.html">Project page</a>
-			<span>·</span>
-			<a class="nav-link" href="/Machine-Learning/projects/support-vector-machine/notebook">Notebook</a>
-		</p>
-	</article>
+    <!-- Project 10 -->
+    <article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
+    	<header>
+    		<h3>Project 10: Support Vector Machine</h3>
+    		<span class="tag">Classification</span>
+    	</header>
+    	<p>Classification with optimal hyperplanes and kernel tricks.</p>
+    	<p class="links">
+    		<a class="nav-link" href="/Machine-Learning/projects/support-vector-machine.html">Project page</a>
+    		<span>·</span>
+    		<a class="nav-link" href="/Machine-Learning/projects/support-vector-machine/notebook">Notebook</a>
+    	</p>
+    </article>
+
 </section>
 
 <section class="cta">
