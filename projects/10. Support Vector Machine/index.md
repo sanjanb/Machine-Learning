@@ -23,15 +23,19 @@ This project explores Support Vector Machines for classification tasks, includin
 ## Key Concepts
 
 ### Support Vectors
+
 The critical data points closest to the decision boundary that define the optimal hyperplane.
 
 ### Kernel Trick
+
 Transforms data into higher dimensions to make non-linearly separable data linearly separable:
+
 - **Linear Kernel:** For linearly separable data
 - **RBF (Radial Basis Function):** For non-linear patterns
 - **Polynomial Kernel:** For polynomial decision boundaries
 
 ### Hyperparameters
+
 - **C (Regularization):** Controls the trade-off between maximizing margin and minimizing classification errors
   - High C: Strict (may overfit)
   - Low C: More tolerant (may underfit)
