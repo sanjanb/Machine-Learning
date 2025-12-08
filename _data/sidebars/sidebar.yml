@@ -53,6 +53,9 @@ entries:
           - title: Decision Trees
             url: /Machine-Learning/projects/decision-trees.html
             output: web
+          - title: Support Vector Machine
+            url: /Machine-Learning/projects/support-vector-machine.html
+            output: web
       - title: References
         output: web
         folderitems:

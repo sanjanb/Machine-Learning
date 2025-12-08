@@ -154,6 +154,16 @@ This section contains practical projects that implement various machine learning
 	</p>
 </div>
 
+<div class="card">
+	<h3>Project 10: Support Vector Machine</h3>
+	<p>Classification with optimal hyperplanes and kernel tricks.</p>
+	<p><strong>Concepts:</strong> Support Vectors, RBF Kernel, C & Gamma Parameters, Margin Maximization</p>
+	<p>
+		<a class="nav-link" href="/Machine-Learning/projects/support-vector-machine.html">Project page</a> ·
+		<a class="nav-link" href="/Machine-Learning/projects/support-vector-machine/notebook">Rendered notebook</a>
+	</p>
+</div>
+
 </div>
 
 ### Project 2: Multiple Linear Regression
