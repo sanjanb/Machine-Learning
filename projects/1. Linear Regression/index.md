@@ -4,7 +4,7 @@ keywords: cs229, machine learning, linear regression, project
 sidebar: sidebar
 permalink: projects/1-linear-regression.html
 layout: default
-image: /Machine-Learning/assets/images/og-default.svg
+image: /Machine-Learning/assets/images/og/project-1-linear-regression.svg
 ---
 
 # Project 1: Simple Linear Regression

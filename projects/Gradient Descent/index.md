@@ -3,7 +3,7 @@ layout: default
 title: "Project: Gradient Descent"
 permalink: projects/gradient-descent.html
 sidebar: sidebar
-image: /Machine-Learning/assets/images/og-default.svg
+image: /Machine-Learning/assets/images/og/project-3-gradient-descent.svg
 ---
 
 # Project: Gradient Descent (Applied)

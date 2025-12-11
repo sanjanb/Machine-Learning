@@ -4,7 +4,7 @@ keywords: cs229, machine learning, multiple linear regression, project
 sidebar: sidebar
 permalink: projects/2-multiple-linear-regression.html
 layout: default
-image: /Machine-Learning/assets/images/og-default.svg
+image: /Machine-Learning/assets/images/og/project-2-multiple-linear-regression.svg
 ---
 
 # Project 2: Multiple Linear Regression
