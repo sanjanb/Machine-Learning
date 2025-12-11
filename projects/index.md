@@ -4,6 +4,7 @@ keywords: cs229, machine learning, projects
 sidebar: sidebar
 permalink: projects/
 layout: default
+image: /Machine-Learning/assets/images/og-default.svg
 ---
 
 <section class="hero">
