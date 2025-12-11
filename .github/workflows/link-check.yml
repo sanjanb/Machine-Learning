@@ -1,0 +1,28 @@
+name: Link Check
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Install deps
+        run: |
+          gem install bundler
+          bundle init
+          echo "gem 'jekyll', '~> 4.3'" >> Gemfile
+          echo "gem 'html-proofer', '~> 5.0'" >> Gemfile
+          bundle install
+      - name: Build site
+        run: bundle exec jekyll build
+      - name: Run htmlproofer
+        run: bundle exec htmlproofer ./_site --disable-external --url-ignore "/^mailto:/" --check-html --check-opengraph --reporter dot
