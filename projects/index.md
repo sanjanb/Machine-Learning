@@ -274,8 +274,6 @@ layout: default
 	})();
 </script>
 
-
-
 ### Project 2: Multiple Linear Regression
 
 **Status:** In Progress  

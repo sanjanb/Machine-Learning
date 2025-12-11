@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /search.json
+---
+[
+  {% assign docs = site.pages | concat: site.posts | concat: site.static_files %}
+  {% for page in site.pages %}
+  {% if page.title and page.permalink %}
+  {
+    "title": {{ page.title | jsonify }},
+    "url": "{{ site.baseurl }}{{ page.permalink }}",
+    "content": {{ page.content | strip_html | normalize_whitespace | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endif %}
+  {% endfor %}
+]
