@@ -1,22 +1,39 @@
-<article class="card" data-category="{{ include.category }}" data-difficulty="{{ include.difficulty }}" data-status="{{ include.status }}">
+<article
+  class="card"
+  data-category="{{ include.category }}"
+  data-difficulty="{{ include.difficulty }}"
+  data-status="{{ include.status }}"
+>
   <header>
     <h3>{{ include.title }}</h3>
     {% if include.tag %}<span class="tag">{{ include.tag }}</span>{% endif %}
   </header>
-  {% if include.description %}<p>{{ include.description }}</p>{% endif %}
-  {% if include.concepts %}<p><strong>Concepts:</strong> {{ include.concepts }}</p>{% endif %}
+  {% if include.description %}
+  <p>{{ include.description }}</p>
+  {% endif %} {% if include.concepts %}
+  <p><strong>Concepts:</strong> {{ include.concepts }}</p>
+  {% endif %}
   <p class="links">
-    {% if include.project_url %}<a class="nav-link" href="{{ include.project_url }}">Project page</a>{% endif %}
-    {% if include.project_url and (include.notebook_url or include.exercise_url or include.dataset_urls or include.colab_url) %}<span>·</span>{% endif %}
-    {% if include.notebook_url %}<a class="nav-link" href="{{ include.notebook_url }}">Notebook</a>{% endif %}
-    {% if include.exercise_url %}<span>·</span><a class="nav-link" href="{{ include.exercise_url }}">{{ include.exercise_label | default: 'Exercise' }}</a>{% endif %}
-    {% if include.dataset_urls %}
-      {% assign items = include.dataset_urls | split: '|' %}
-      {% for item in items %}
-        {% assign parts = item | split: '::' %}
-        <span>·</span><a class="nav-link" href="{{ parts[0] }}">{{ parts[1] | default: 'Dataset' }}</a>
-      {% endfor %}
-    {% endif %}
-    {% if include.colab_url %}<span>·</span><a class="btn" href="{{ include.colab_url }}">Open in Colab</a>{% endif %}
+    {% if include.project_url %}<a
+      class="nav-link"
+      href="{{ include.project_url }}"
+      >Project page</a
+    >{% endif %} {% if include.project_url and (include.notebook_url or
+    include.exercise_url or include.dataset_urls or include.colab_url)
+    %}<span>·</span>{% endif %} {% if include.notebook_url %}<a
+      class="nav-link"
+      href="{{ include.notebook_url }}"
+      >Notebook</a
+    >{% endif %} {% if include.exercise_url %}<span>·</span
+    ><a class="nav-link" href="{{ include.exercise_url }}"
+      >{{ include.exercise_label | default: 'Exercise' }}</a
+    >{% endif %} {% if include.dataset_urls %} {% assign items =
+    include.dataset_urls | split: '|' %} {% for item in items %} {% assign parts
+    = item | split: '::' %} <span>·</span
+    ><a class="nav-link" href="{{ parts[0] }}"
+      >{{ parts[1] | default: 'Dataset' }}</a
+    >
+    {% endfor %} {% endif %} {% if include.colab_url %}<span>·</span
+    ><a class="btn" href="{{ include.colab_url }}">Open in Colab</a>{% endif %}
   </p>
 </article>

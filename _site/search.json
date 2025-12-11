@@ -103,7 +103,7 @@
   {
     "title": "Project: Decision Trees",
     "url": "/Machine-Learningprojects/decision-trees.html",
-    "content": "Project: Decision Trees This project builds decision tree classifiers and regressors, exploring splitting criteria and pruning. Summary Goal: Predict classes or continuous values using tree-based models Concepts: Gini, entropy, information gain, pruning, max depth Pipeline: Preprocessing → Training → Feature importance → Evaluation Notebooks Decision Trees Main Decision Trees Exercise Datasets salaries.csv titanic.csv Related Topics Cost Functions Ensemble methods (planned)"
+    "content": "Project: Decision Trees This project builds decision tree classifiers and regressors, exploring splitting criteria and pruning. Summary Goal: Predict classes or continuous values using tree-based models Concepts: Gini, entropy, information gain, pruning, max depth Pipeline: Preprocessing → Training → Feature importance → Evaluation Notebooks Decision Trees Main Decision Trees Exercise Open in Colab: Launch Main Datasets salaries.csv titanic.csv Related Topics Cost Functions Ensemble methods (planned)"
   },
   
   
