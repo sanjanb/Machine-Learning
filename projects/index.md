@@ -349,10 +349,10 @@ Each project includes:
 
 | Concept             | Theory Page                                   | Used in Projects |
 | ------------------- | --------------------------------------------- | ---------------- |
-| Linear Regression   | [📖 Theory](/topics/linear_regression.html)   | Project 1        |
-| Logistic Regression | [📖 Theory](/topics/logistic_regression.html) | Project 2        |
-| Gradient Descent    | [📖 Theory](/topics/gradient_descent.html)    | Projects 1, 2, 3 |
-| Cost Functions      | [📖 Theory](/topics/cost_functions.html)      | Projects 1, 2, 3 |
+| Linear Regression   | [📖 Theory](/Machine-Learning/topics/linear_regression.html)   | Project 1        |
+| Logistic Regression | [📖 Theory](/Machine-Learning/topics/logistic_regression.html) | Project 2        |
+| Gradient Descent    | [📖 Theory](/Machine-Learning/topics/gradient_descent.html)    | Projects 1, 2, 3 |
+| Cost Functions      | [📖 Theory](/Machine-Learning/topics/cost_functions.html)      | Projects 1, 2, 3 |
 
 ---
 
