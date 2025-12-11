@@ -3,6 +3,7 @@ layout: default
 title: "Project: K-Fold Cross Validation"
 permalink: projects/k-fold-cross-validation.html
 sidebar: sidebar
+image: /Machine-Learning/assets/images/og-default.svg
 ---
 
 # Project 12: K-Fold Cross Validation
@@ -18,6 +19,7 @@ This project demonstrates K-Fold cross validation to assess model generalization
 ## Notebook
 
 - [Rendered notebook](/Machine-Learning/projects/k-fold-cross-validation/notebook)
+- Open in Colab: [Launch](/redirect?target=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Fsanjanb%2FMachine-Learning%2Fblob%2Fmain%2Fprojects%2F12.%2520K-Fold%2520Cross%2520Validation%2Fk-fold-cross-validation.ipynb)
 
 ## Exercise
 

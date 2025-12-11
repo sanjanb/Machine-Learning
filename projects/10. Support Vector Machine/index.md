@@ -3,6 +3,7 @@ layout: default
 title: "Project: Support Vector Machine"
 permalink: projects/support-vector-machine.html
 sidebar: sidebar
+image: /Machine-Learning/assets/images/og-default.svg
 ---
 
 # Project 10: Support Vector Machine (SVM)
@@ -19,6 +20,7 @@ This project explores Support Vector Machines for classification tasks, includin
 ## Notebook
 
 - [Rendered notebook](/Machine-Learning/projects/support-vector-machine/notebook)
+- Open in Colab: [Launch](/redirect?target=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Fsanjanb%2FMachine-Learning%2Fblob%2Fmain%2Fprojects%2F10.%2520Support%2520Vector%2520Machine%2Fsupport-vector-machine.ipynb)
 
 ## Key Concepts
 

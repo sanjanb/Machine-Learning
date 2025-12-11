@@ -3,6 +3,7 @@ layout: default
 title: "Project: Random Forest Classifier"
 permalink: projects/random-forest.html
 sidebar: sidebar
+image: /Machine-Learning/assets/images/og-default.svg
 ---
 
 # Project 11: Random Forest Classifier
@@ -18,6 +19,7 @@ This project implements a Random Forest for classification, exploring ensemble m
 ## Notebook
 
 - [Rendered notebook](/Machine-Learning/projects/random-forest/notebook)
+- Open in Colab: [Launch](/redirect?target=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Fsanjanb%2FMachine-Learning%2Fblob%2Fmain%2Fprojects%2F11.%2520Random%2520Forest%2520Classifier%2Frandom-forest.ipynb)
 
 ## Exercise
 
