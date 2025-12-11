@@ -3,6 +3,7 @@ layout: default
 title: "K-Fold Cross Validation - Notebook"
 permalink: projects/k-fold-cross-validation/notebook
 sidebar: sidebar
+mathjax: true
 ---
 
 # K-Fold Cross Validation - Jupyter Notebook
