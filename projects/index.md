@@ -347,8 +347,8 @@ Each project includes:
 
 ## Quick Links to Related Concepts
 
-| Concept             | Theory Page                                   | Used in Projects |
-| ------------------- | --------------------------------------------- | ---------------- |
+| Concept             | Theory Page                                                    | Used in Projects |
+| ------------------- | -------------------------------------------------------------- | ---------------- |
 | Linear Regression   | [📖 Theory](/Machine-Learning/topics/linear_regression.html)   | Project 1        |
 | Logistic Regression | [📖 Theory](/Machine-Learning/topics/logistic_regression.html) | Project 2        |
 | Gradient Descent    | [📖 Theory](/Machine-Learning/topics/gradient_descent.html)    | Projects 1, 2, 3 |
