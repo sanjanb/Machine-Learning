@@ -176,6 +176,10 @@
 <section class="filters" aria-label="Project filters">
 	<div class="filter-grid">
 		<label class="filter">
+			<span>Search</span>
+			<input id="search-input" type="search" placeholder="Search projects..." aria-label="Search projects" />
+		</label>
+		<label class="filter">
 			<span>Category</span>
 			<select id="filter-category">
 				<option value="all" selected="">All</option>
@@ -429,6 +433,8 @@
 		controls.forEach(el=>el.addEventListener('change', applyFilters));
 	})();
 </script>
+
+<script src="/Machine-Learning/assets/js/search.js"></script>
 
 <h3 id="project-2-multiple-linear-regression">Project 2: Multiple Linear Regression</h3>
 

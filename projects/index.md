@@ -20,6 +20,10 @@ layout: default
 <section class="filters" aria-label="Project filters">
 	<div class="filter-grid">
 		<label class="filter">
+			<span>Search</span>
+			<input id="search-input" type="search" placeholder="Search projects..." aria-label="Search projects" />
+		</label>
+		<label class="filter">
 			<span>Category</span>
 			<select id="filter-category">
 				<option value="all" selected>All</option>
@@ -273,6 +277,7 @@ layout: default
 		controls.forEach(el=>el.addEventListener('change', applyFilters));
 	})();
 </script>
+<script src="{{ site.baseurl }}/assets/js/search.js"></script>
 
 ### Project 2: Multiple Linear Regression
 
