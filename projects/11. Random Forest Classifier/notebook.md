@@ -3,6 +3,7 @@ layout: default
 title: "Random Forest Classifier - Notebook"
 permalink: projects/random-forest/notebook
 sidebar: sidebar
+mathjax: true
 ---
 
 # Random Forest Classifier - Jupyter Notebook
