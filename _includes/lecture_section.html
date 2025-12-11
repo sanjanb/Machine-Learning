@@ -1,30 +1,20 @@
 <section class="lecture">
   <header>
     <h2>{{ include.title }}</h2>
-    {% if include.summary %}<p class="muted">{{ include.summary }}</p>{% endif %}
+    {% if include.summary %}
+    <p class="muted">{{ include.summary }}</p>
+    {% endif %}
   </header>
   {% if include.concepts %}
-    <p><strong>Concepts:</strong> {{ include.concepts }}</p>
-  {% endif %}
-  {% if include.projects %}
-    <div class="cards">
-      {% for p in include.projects %}
-        {% include project_card.html
-          title=p.title
-          tag=p.tag
-          category=p.category
-          difficulty=p.difficulty
-          status=p.status
-          description=p.description
-          concepts=p.concepts
-          project_url=p.project_url
-          notebook_url=p.notebook_url
-          exercise_url=p.exercise_url
-          exercise_label=p.exercise_label
-          dataset_urls=p.dataset_urls
-          colab_url=p.colab_url
-        %}
-      {% endfor %}
-    </div>
+  <p><strong>Concepts:</strong> {{ include.concepts }}</p>
+  {% endif %} {% if include.projects %}
+  <div class="cards">
+    {% for p in include.projects %} {% include project_card.html title=p.title
+    tag=p.tag category=p.category difficulty=p.difficulty status=p.status
+    description=p.description concepts=p.concepts project_url=p.project_url
+    notebook_url=p.notebook_url exercise_url=p.exercise_url
+    exercise_label=p.exercise_label dataset_urls=p.dataset_urls
+    colab_url=p.colab_url %} {% endfor %}
+  </div>
   {% endif %}
 </section>
