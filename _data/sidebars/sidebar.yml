@@ -56,6 +56,12 @@ entries:
           - title: Support Vector Machine
             url: /Machine-Learning/projects/support-vector-machine.html
             output: web
+          - title: Random Forest Classifier
+            url: /Machine-Learning/projects/random-forest.html
+            output: web
+          - title: K-Fold Cross Validation
+            url: /Machine-Learning/projects/k-fold-cross-validation.html
+            output: web
       - title: References
         output: web
         folderitems:
