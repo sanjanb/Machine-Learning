@@ -231,6 +231,8 @@ image: /Machine-Learning/assets/images/og-default.svg
     		<a class="nav-link" href="/Machine-Learning/projects/random-forest.html">Project page</a>
     		<span>·</span>
     		<a class="nav-link" href="/Machine-Learning/projects/random-forest/notebook">Notebook</a>
+			<span>·</span>
+			<a class="btn" href="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/11.%20Random%20Forest%20Classifier/random-forest.ipynb">Open in Colab</a>
     	</p>
     </article>
 
@@ -245,6 +247,8 @@ image: /Machine-Learning/assets/images/og-default.svg
     		<a class="nav-link" href="/Machine-Learning/projects/k-fold-cross-validation.html">Project page</a>
     		<span>·</span>
     		<a class="nav-link" href="/Machine-Learning/projects/k-fold-cross-validation/notebook">Notebook</a>
+			<span>·</span>
+			<a class="btn" href="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/12.%20K-Fold%20Cross%20Validation/k-fold-cross-validation.ipynb">Open in Colab</a>
     	</p>
     </article>
 
@@ -278,6 +282,7 @@ image: /Machine-Learning/assets/images/og-default.svg
 		controls.forEach(el=>el.addEventListener('change', applyFilters));
 	})();
 </script>
+<script>document.body.dataset.baseurl = '{{ site.baseurl }}';</script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 
 ### Project 2: Multiple Linear Regression
