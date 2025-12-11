@@ -3,6 +3,7 @@ layout: default
 title: "Project: Logistic Regression"
 permalink: projects/logistic-regression.html
 sidebar: sidebar
+image: /Machine-Learning/assets/images/og-default.svg
 ---
 
 # Project: Logistic Regression
@@ -18,6 +19,7 @@ This project applies logistic regression for binary and multiclass classificatio
 ## Notebook
 
 - [Rendered notebook](/Machine-Learning/projects/logistic-regression/notebook)
+- Open in Colab: [Launch](/redirect?target=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Fsanjanb%2FMachine-Learning%2Fblob%2Fmain%2Fprojects%2F7.%2520Logistic%2520Regression%2Flogistic-regression.ipynb)
 
 ## Datasets
 

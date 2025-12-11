@@ -133,197 +133,157 @@ image: /Machine-Learning/assets/images/og-default.svg
     		<a class="nav-link" href="/Machine-Learning/projects/encoding.html">Project page</a>
     		<span>·</span>
     		<a class="nav-link" href="/Machine-Learning/projects/encoding/notebook">Notebook</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv">Dataset</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/carprices.csv">Dataset</a>
-    	</p>
-    </article>
+				{% include project_card.html
+				  title="Project 1: Simple Linear Regression"
+				  tag="Regression"
+				  category="regression"
+				  difficulty="beginner"
+				  status="complete"
+				  description="Predict home prices using a single feature (area)."
+				  concepts="Linear Regression, Gradient Descent, Cost Functions"
+				  project_url="/Machine-Learning/projects/1-linear-regression.html"
+				  notebook_url="/Machine-Learning/projects/1-linear-regression/notebook"
+				  dataset_urls="/Machine-Learning/projects/1.%20Linear%20Regression/homeprices.csv::Dataset"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/1.%20Linear%20Regression/linear-regression%20%281%29.ipynb"
+				%}
 
-    <!-- Project 6 -->
-    <article class="card" data-category="preprocessing" data-difficulty="beginner" data-status="planned">
-    	<header>
-    		<h3>Project 6: Train/Test Split</h3>
-    		<span class="tag">Evaluation</span>
-    	</header>
-    	<p>Proper dataset splitting and evaluation.</p>
-    	<p class="links">
-    		<a class="nav-link" href="/Machine-Learning/projects/train-test-split.html">Project page</a>
-    		<span>·</span>
-    		<span class="muted">Notebook coming soon</span>
-    	</p>
-    </article>
+				{% include project_card.html
+				  title="Project 2: Multiple Linear Regression"
+				  tag="Regression"
+				  category="regression"
+				  difficulty="beginner"
+				  status="complete"
+				  description="Predict home prices using area, bedrooms, and age."
+				  concepts="Multiple Linear Regression, Data Cleaning, Gradient Descent"
+				  project_url="/Machine-Learning/projects/2-multiple-linear-regression.html"
+				  notebook_url="/Machine-Learning/projects/2-multiple-linear-regression/notebook"
+				  dataset_urls="/Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/homeprices%20(1).csv::Dataset|/Machine-Learning/projects/2.%20Linear%20Regression%20with%20multiple%20features/hiring.csv::Dataset"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/2.%20Linear%20Regression%20with%20multiple%20features/linear-regression-with-multiple-variables.ipynb"
+				%}
 
-    <!-- Project 7 -->
-    <article class="card" data-category="classification" data-difficulty="beginner" data-status="complete">
-    	<header>
-    		<h3>Project 7: Logistic Regression</h3>
-    		<span class="tag">Classification</span>
-    	</header>
-    	<p>Binary classification with logistic regression.</p>
-    	<p class="links">
-    		<a class="nav-link" href="/Machine-Learning/projects/logistic-regression.html">Project page</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/logistic-regression/notebook">Notebook</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/7.%20Logistic%20Regression/insurance_data.csv">Dataset</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/7.%20Logistic%20Regression/HR_comma_sep.csv">Dataset</a>
-    	</p>
-    </article>
+				{% include project_card.html
+				  title="Project 3: Gradient Descent"
+				  tag="Optimization"
+				  category="optimization"
+				  difficulty="intermediate"
+				  status="complete"
+				  description="Optimizing models with gradient descent variants."
+				  project_url="/Machine-Learning/projects/gradient-descent.html"
+				  notebook_url="/Machine-Learning/projects/gradient-descent/notebook"
+				  dataset_urls="/Machine-Learning/projects/3.%20Gradient%20Descent/test_scores.csv::Dataset"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/3.%20Gradient%20Descent/gradient-descent-and-cost-function.ipynb"
+				%}
 
-    <!-- Project 8 -->
-    <article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
-    	<header>
-    		<h3>Project 8: Multiclass Logistic Regression</h3>
-    		<span class="tag">Classification</span>
-    	</header>
-    	<p>Softmax regression and OvR strategies.</p>
-    	<p class="links">
-    		<a class="nav-link" href="/Machine-Learning/projects/multiclass-logistic-regression.html">Project page</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/multiclass-logistic-regression/notebook">Notebook</a>
-    	</p>
-    </article>
+				{% include project_card.html
+				  title="Project 4: Save & Load Models"
+				  tag="Utility"
+				  category="preprocessing"
+				  difficulty="beginner"
+				  status="complete"
+				  description="Persist trained models with joblib/pickle."
+				  project_url="/Machine-Learning/projects/save-model.html"
+				  notebook_url="/Machine-Learning/projects/save-model/notebook"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/4.%20Save%20the%20model/save-model-using-joblib-and-pick-le.ipynb"
+				%}
 
-    <!-- Project 9 -->
-    <article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
-    	<header>
-    		<h3>Project 9: Decision Trees</h3>
-    		<span class="tag">Classification</span>
-    	</header>
-    	<p>Tree-based models for classification/regression.</p>
-    	<p class="links">
-    		<a class="nav-link" href="/Machine-Learning/projects/decision-trees.html">Project page</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/decision-trees/notebook">Main notebook</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/decision-trees/exercise/notebook">Exercise</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/9.%20Decision%20Trees/salaries.csv">Dataset</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/9.%20Decision%20Trees/Exercise/titanic.csv">Dataset</a>
-    	</p>
-    </article>
+				{% include project_card.html
+				  title="Project 5: Dummy Variables & One-Hot"
+				  tag="Preprocessing"
+				  category="preprocessing"
+				  difficulty="beginner"
+				  status="complete"
+				  description="Encode categorical features for ML models."
+				  project_url="/Machine-Learning/projects/encoding.html"
+				  notebook_url="/Machine-Learning/projects/encoding/notebook"
+				  dataset_urls="/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/homeprices%20(2).csv::Dataset|/Machine-Learning/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/carprices.csv::Dataset"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/5.%20Dummy%20variable%20%26%20one-hot%20encoding/dummy-variable-and-one-hot-encoding.ipynb"
+				%}
 
-    <!-- Project 10 -->
-    <article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
-    	<header>
-    		<h3>Project 10: Support Vector Machine</h3>
-    		<span class="tag">Classification</span>
-    	</header>
-    	<p>Classification with optimal hyperplanes and kernel tricks.</p>
-    	<p class="links">
-    		<a class="nav-link" href="/Machine-Learning/projects/support-vector-machine.html">Project page</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/support-vector-machine/notebook">Notebook</a>
-    	</p>
-    </article>
+				{% include project_card.html
+				  title="Project 6: Train/Test Split"
+				  tag="Evaluation"
+				  category="preprocessing"
+				  difficulty="beginner"
+				  status="planned"
+				  description="Proper dataset splitting and evaluation."
+				  project_url="/Machine-Learning/projects/train-test-split.html"
+				%}
 
-    <!-- Project 11 -->
-    <article class="card" data-category="classification" data-difficulty="intermediate" data-status="complete">
-    	<header>
-    		<h3>Project 11: Random Forest Classifier</h3>
-    		<span class="tag">Classification</span>
-    	</header>
-    	<p>Ensemble learning with bagging and feature sampling.</p>
-    	<p class="links">
-    		<a class="nav-link" href="/Machine-Learning/projects/random-forest.html">Project page</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/random-forest/notebook">Notebook</a>
-    		<span>·</span>
-    		<a class="btn" href="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/11.%20Random%20Forest%20Classifier/random-forest.ipynb">Open in Colab</a>
-    	</p>
-    </article>
+				{% include project_card.html
+				  title="Project 7: Logistic Regression"
+				  tag="Classification"
+				  category="classification"
+				  difficulty="beginner"
+				  status="complete"
+				  description="Binary classification with logistic regression."
+				  project_url="/Machine-Learning/projects/logistic-regression.html"
+				  notebook_url="/Machine-Learning/projects/logistic-regression/notebook"
+				  dataset_urls="/Machine-Learning/projects/7.%20Logistic%20Regression/insurance_data.csv::Dataset|/Machine-Learning/projects/7.%20Logistic%20Regression/HR_comma_sep.csv::Dataset"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/7.%20Logistic%20Regression/logistic-regression.ipynb"
+				%}
 
-    <!-- Project 12 -->
-    <article class="card" data-category="evaluation" data-difficulty="beginner" data-status="complete">
-    	<header>
-    		<h3>Project 12: K-Fold Cross Validation</h3>
-    		<span class="tag">Evaluation</span>
-    	</header>
-    	<p>Robust performance estimation across folds.</p>
-    	<p class="links">
-    		<a class="nav-link" href="/Machine-Learning/projects/k-fold-cross-validation.html">Project page</a>
-    		<span>·</span>
-    		<a class="nav-link" href="/Machine-Learning/projects/k-fold-cross-validation/notebook">Notebook</a>
-    		<span>·</span>
-    		<a class="btn" href="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/12.%20K-Fold%20Cross%20Validation/k-fold-cross-validation.ipynb">Open in Colab</a>
-    	</p>
-    </article>
+				{% include project_card.html
+				  title="Project 8: Multiclass Logistic Regression"
+				  tag="Classification"
+				  category="classification"
+				  difficulty="intermediate"
+				  status="complete"
+				  description="Softmax regression and OvR strategies."
+				  project_url="/Machine-Learning/projects/multiclass-logistic-regression.html"
+				  notebook_url="/Machine-Learning/projects/multiclass-logistic-regression/notebook"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/8.%20Multi%20Class%20Logistic%20Regression/multi-classlogistic-regression.ipynb"
+				%}
 
-</section>
+				{% include project_card.html
+				  title="Project 9: Decision Trees"
+				  tag="Classification"
+				  category="classification"
+				  difficulty="intermediate"
+				  status="complete"
+				  description="Tree-based models for classification/regression."
+				  project_url="/Machine-Learning/projects/decision-trees.html"
+				  notebook_url="/Machine-Learning/projects/decision-trees/notebook"
+				  exercise_url="/Machine-Learning/projects/decision-trees/exercise/notebook"
+				  exercise_label="Exercise"
+				  dataset_urls="/Machine-Learning/projects/9.%20Decision%20Trees/salaries.csv::Dataset|/Machine-Learning/projects/9.%20Decision%20Trees/Exercise/titanic.csv::Dataset"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/9.%20Decision%20Trees/decision-tree.ipynb"
+				%}
 
-<section class="cta">
-	<div class="cta-card">
-		<h3>Want to contribute?</h3>
-		<p>Open an issue or PR with a new dataset, notebook, or improvement.</p>
-		<a class="btn" href="https://github.com/sanjanb/Machine-Learning">View on GitHub</a>
-	</div>
-</section>
+				{% include project_card.html
+				  title="Project 10: Support Vector Machine"
+				  tag="Classification"
+				  category="classification"
+				  difficulty="intermediate"
+				  status="complete"
+				  description="Classification with optimal hyperplanes and kernel tricks."
+				  project_url="/Machine-Learning/projects/support-vector-machine.html"
+				  notebook_url="/Machine-Learning/projects/support-vector-machine/notebook"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/10.%20Support%20Vector%20Machine/support-vector-machine.ipynb"
+				%}
 
-<script>
-	(function(){
-		const grid = document.getElementById('projects-grid');
-		const controls = ['filter-category','filter-difficulty','filter-status'].map(id=>document.getElementById(id));
-		function applyFilters(){
-			const criteria = {
-				category: document.getElementById('filter-category').value,
-				difficulty: document.getElementById('filter-difficulty').value,
-				status: document.getElementById('filter-status').value
-			};
-			[...grid.querySelectorAll('.card')].forEach(card=>{
-				const match = (!criteria.category || criteria.category==='all' || card.dataset.category===criteria.category)
-					&& (!criteria.difficulty || criteria.difficulty==='all' || card.dataset.difficulty===criteria.difficulty)
-					&& (!criteria.status || criteria.status==='all' || card.dataset.status===criteria.status);
-				card.style.display = match ? '' : 'none';
-			});
-		}
-		controls.forEach(el=>el.addEventListener('change', applyFilters));
-	})();
-</script>
-<script>document.body.dataset.baseurl = '{{ site.baseurl }}';</script>
-<script src="{{ site.baseurl }}/assets/js/search.js"></script>
+				{% include project_card.html
+				  title="Project 11: Random Forest Classifier"
+				  tag="Classification"
+				  category="classification"
+				  difficulty="intermediate"
+				  status="complete"
+				  description="Ensemble learning with bagging and feature sampling."
+				  project_url="/Machine-Learning/projects/random-forest.html"
+				  notebook_url="/Machine-Learning/projects/random-forest/notebook"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/11.%20Random%20Forest%20Classifier/random-forest.ipynb"
+				%}
 
-### Project 2: Multiple Linear Regression
-
-**Status:** In Progress  
-**Concepts Used:** Multiple Linear Regression, Data Cleaning, Gradient Descent  
-**Description:** Predicts home prices using area, bedrooms, and age. Includes data preprocessing and model evaluation.
-
-### Project: Classification with Logistic Regression
-
-**Status:** Planned  
-**Concepts Used:** Logistic Regression, Sigmoid Function, Classification  
-**Description:** Binary and multiclass classification using logistic regression.
-
----
-
-## Project Structure
-
-Each project includes:
-
-- **📝 Problem Statement** - What we're trying to solve
-- **🔧 Implementation** - Step-by-step code with explanations
-- **📊 Results & Analysis** - Visualizations and performance metrics
-- **🔗 Concept Links** - Connections to theory pages
-- **💡 Key Learnings** - Insights and takeaways
-
----
-
-## Quick Links to Related Concepts
-
-| Concept             | Theory Page                                                    | Used in Projects |
-| ------------------- | -------------------------------------------------------------- | ---------------- |
-| Linear Regression   | [📖 Theory](/Machine-Learning/topics/linear_regression.html)   | Project 1        |
-| Logistic Regression | [📖 Theory](/Machine-Learning/topics/logistic_regression.html) | Project 2        |
-| Gradient Descent    | [📖 Theory](/Machine-Learning/topics/gradient_descent.html)    | Projects 1, 2, 3 |
-| Cost Functions      | [📖 Theory](/Machine-Learning/topics/cost_functions.html)      | Projects 1, 2, 3 |
-
----
-
-## 🚀 Getting Started
-
+				{% include project_card.html
+				  title="Project 12: K-Fold Cross Validation"
+				  tag="Evaluation"
+				  category="evaluation"
+				  difficulty="beginner"
+				  status="complete"
+				  description="Robust performance estimation across folds."
+				  project_url="/Machine-Learning/projects/k-fold-cross-validation.html"
+				  notebook_url="/Machine-Learning/projects/k-fold-cross-validation/notebook"
+				  colab_url="https://colab.research.google.com/github/sanjanb/Machine-Learning/blob/main/projects/12.%20K-Fold%20Cross%20Validation/k-fold-cross-validation.ipynb"
+				%}
 1. Choose a project that matches your current learning level
 2. Review the related concept pages first
 3. Follow the implementation step-by-step

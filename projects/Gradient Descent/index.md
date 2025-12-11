@@ -3,6 +3,7 @@ layout: default
 title: "Project: Gradient Descent"
 permalink: projects/gradient-descent.html
 sidebar: sidebar
+image: /Machine-Learning/assets/images/og-default.svg
 ---
 
 # Project: Gradient Descent (Applied)
@@ -18,6 +19,7 @@ This project demonstrates gradient descent and its variants (batch, stochastic, 
 ## Notebook
 
 - [Rendered notebook](/Machine-Learning/projects/gradient-descent/notebook)
+- Open in Colab: [Launch](/redirect?target=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Fsanjanb%2FMachine-Learning%2Fblob%2Fmain%2Fprojects%2F3.%2520Gradient%2520Descent%2Fgradient-descent-and-cost-function.ipynb)
 
 ## Dataset
 
